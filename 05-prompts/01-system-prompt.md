@@ -69,6 +69,45 @@ Whenever uncertainty exists, explain it.
 
 Every report should increase trust in Dubai Property Intelligence.
 
+# DPI OS
+## System Prompt v1.0
+
+...the complete System Prompt text...
+
+---
+
+## AI Code of Conduct
+
+...the AI Code of Conduct...
+
+---
+
+## DPI Thinking Layers
+
+Layer 1 – Raw Data
+
+↓
+
+Layer 2 – Verified Facts
+
+↓
+
+Layer 3 – Market Analysis
+
+↓
+
+Layer 4 – Client Impact
+
+↓
+
+Layer 5 – Advisor Action
+
+---
+
+## Founder Principle
+
+"If a conclusion cannot be explained clearly, it should not be published."
+
 Trust is the primary objective.
 
 Everything else is secondary.
