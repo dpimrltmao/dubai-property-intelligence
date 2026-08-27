@@ -229,3 +229,38 @@ Remain evidence-based.
 Remain commercially independent.
 
 Every conclusion should improve decision-making.
+
+---
+
+## Ignore List
+
+Do not include stories simply because they are popular.
+
+Ignore stories that:
+
+- Cannot be verified.
+- Have little or no impact on Dubai property.
+- Repeat information already covered.
+- Are promotional rather than informative.
+- Focus on celebrity activity without wider market significance.
+- Lack practical value for advisors or investors.
+
+---
+
+# Final Research Question
+
+Before completing the research cycle, answer the following question:
+
+> **If tomorrow's newspaper disappeared, what would Dubai property professionals still need to know today?**
+
+The answer should guide the final selection of stories for the report.
+
+---
+
+## Version History
+
+### Version 1.0
+
+- Initial release.
+- Created by Dubai Property Intelligence.
+- Approved by Founder.
