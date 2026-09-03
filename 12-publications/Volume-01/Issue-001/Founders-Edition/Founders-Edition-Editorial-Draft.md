@@ -1,7 +1,3 @@
-Done. I’d now treat the Founder’s Edition as an **8-page publication**, not a 6-page one.
-
-Below is the revised editorial architecture I recommend you use to update `founders-edition-editorial-draft.md`.
-
 # Dubai Property Intelligence
 
 ## Founder’s Edition — Editorial Draft v2.0
