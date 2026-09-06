@@ -236,3 +236,25 @@ h1 span{color:var(--gold)}
   .btn{width:100%}
   .footer-links{flex-wrap:wrap}
 }
+
+.brevo-form-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.brevo-form-wrap iframe {
+  display: block;
+  width: 100%;
+  max-width: 540px;
+  min-height: 520px;
+  border: 0;
+}
+
+@media (max-width: 600px) {
+  .brevo-form-wrap iframe {
+    min-height: 560px;
+  }
+}
