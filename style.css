@@ -289,3 +289,22 @@ h1 span{color:var(--gold)}
   color: #A9B3BD;
   font-size: 0.78rem;
 }
+
+@media (max-width: 600px) {
+  .subscribe-box {
+    padding: 20px 12px;
+    gap: 24px;
+  }
+
+  .brevo-form-wrap {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .brevo-form-wrap iframe {
+    width: 100%;
+    max-width: 100%;
+    min-height: 650px;
+    height: 650px;
+  }
+}
