@@ -57,12 +57,18 @@ a{color:inherit;text-decoration:none}
 .nav{display:flex;gap:24px;font-size:.88rem;color:var(--muted)}
 .nav a:hover{color:var(--gold)}
 
-.hero{
-  padding:96px 0 80px;
+.hero {
+  position: relative;
+  padding: 96px 0 80px;
   background:
-    radial-gradient(circle at 85% 18%,rgba(26,166,166,.16),transparent 28%),
-    radial-gradient(circle at 25% 15%,rgba(212,175,55,.08),transparent 26%),
-    var(--bg);
+    linear-gradient(
+      90deg,
+      rgba(11,17,23,0.98) 0%,
+      rgba(11,17,23,0.92) 38%,
+      rgba(11,17,23,0.62) 68%,
+      rgba(11,17,23,0.30) 100%
+    ),
+    url("13-assets/dpi-hero-skyline.png") center right / cover no-repeat;
 }
 
 .hero-grid{
