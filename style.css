@@ -1000,3 +1000,220 @@ h1 span{color:var(--gold)}
   }
 
 }
+
+/* =========================================================
+   WEALTH GENERATOR — HERO QUESTIONS
+   ========================================================= */
+
+.wealth-landing-inner {
+  max-width: 1120px;
+}
+
+
+.wealth-hero-questions {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 12px;
+
+  margin:
+    34px 0 38px;
+}
+
+
+.wealth-hero-question {
+
+  position: relative;
+
+  min-height: 135px;
+
+  padding: 18px;
+
+  background:
+    rgba(13, 22, 29, 0.88);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  overflow: hidden;
+}
+
+
+.wealth-hero-question::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 3px;
+}
+
+
+.wealth-hero-question span {
+
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  color: #747f88;
+}
+
+
+.wealth-hero-question strong {
+
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #f5f6f7;
+
+  font-size: 16px;
+}
+
+
+.wealth-hero-question p {
+
+  margin: 0;
+
+  color: #8d979f;
+
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+
+.growth-q::after {
+  background: #22bcc1;
+}
+
+
+.stability-q::after {
+  background: #dfb93f;
+}
+
+
+.bump-q::after {
+  background: #a65d52;
+}
+
+
+.wpi-q::after {
+
+  background:
+    linear-gradient(
+      90deg,
+      #22bcc1,
+      #dfb93f
+    );
+}
+
+
+/* =========================================================
+   WEALTH GENERATOR NAV BUTTON
+   ========================================================= */
+
+.nav .nav-wealth {
+
+  padding:
+    9px 14px;
+
+  color: #e1bc48;
+
+  border:
+    1px solid
+    rgba(225,188,72,0.40);
+
+  background:
+    rgba(225,188,72,0.06);
+
+  border-radius: 3px;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.nav .nav-wealth:hover {
+
+  background: #dfb93f;
+
+  color: #081016;
+
+  border-color: #dfb93f;
+}
+
+
+/* =========================================================
+   FINAL CTA ALIGNMENT
+   ========================================================= */
+
+.wealth-final-cta {
+
+  text-align: center;
+}
+
+
+.wealth-final-cta .section-intro {
+
+  max-width: 700px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+
+
+.wealth-final-cta .button-row {
+
+  justify-content: center;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .wealth-hero-questions {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .wealth-hero-questions {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .nav .nav-wealth {
+
+    padding: 6px 8px;
+
+  }
+
+}
