@@ -308,3 +308,435 @@ h1 span{color:var(--gold)}
     height: 650px;
   }
 }
+
+/* =========================================================
+   DPI WEALTH GENERATOR FEATURE
+   ========================================================= */
+
+.wealth-feature {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 82% 30%,
+      rgba(21, 174, 181, 0.10),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 15% 70%,
+      rgba(218, 178, 58, 0.08),
+      transparent 32%
+    ),
+    #0a1016;
+
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+
+.wealth-feature-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(360px, 0.95fr);
+
+  gap: 72px;
+  align-items: center;
+}
+
+
+.wealth-feature-copy {
+  max-width: 680px;
+}
+
+
+.wealth-feature-title {
+  margin: 0 0 22px;
+
+  font-size: clamp(44px, 5.3vw, 76px);
+  line-height: 0.96;
+  letter-spacing: -2.5px;
+
+  color: #f5f6f7;
+}
+
+
+.wealth-feature-title span {
+  color: #1fb8bd;
+}
+
+
+.wealth-feature-hook {
+  max-width: 650px;
+
+  margin: 0 0 20px;
+
+  font-size: clamp(22px, 2.2vw, 30px);
+  line-height: 1.3;
+
+  color: #d7d9db;
+}
+
+
+.wealth-feature-hook strong {
+  color: #e1b936;
+}
+
+
+.wealth-feature-text {
+  max-width: 620px;
+
+  color: #9fa8b1;
+
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+
+/* SIGNALS */
+
+.wealth-mini-signals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+
+  margin: 30px 0;
+}
+
+
+.wealth-signal {
+  min-height: 92px;
+
+  padding: 16px;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  background: rgba(12,20,27,0.82);
+}
+
+
+.wealth-signal span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.6px;
+}
+
+
+.wealth-signal strong {
+  display: block;
+
+  color: #f0f2f3;
+
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+
+.wealth-growth span {
+  color: #22bec2;
+}
+
+
+.wealth-stability span {
+  color: #ddb63b;
+}
+
+
+.wealth-bumpiness span {
+  color: #bf6d61;
+}
+
+
+.wealth-buttons {
+  margin-top: 26px;
+}
+
+
+.wealth-disclaimer {
+  margin-top: 15px;
+  color: #737d86;
+}
+
+
+/* =========================================================
+   WEALTH PREVIEW CARD
+   ========================================================= */
+
+.wealth-preview-card {
+  position: relative;
+
+  border: 1px solid rgba(218,178,58,0.25);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(15,25,33,0.98),
+      rgba(7,12,17,0.98)
+    );
+
+  box-shadow:
+    0 35px 90px rgba(0,0,0,0.40);
+
+  overflow: hidden;
+}
+
+
+.wealth-preview-card::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      120deg,
+      rgba(32,186,191,0.04),
+      transparent 35%,
+      rgba(218,178,58,0.05)
+    );
+}
+
+
+.wealth-preview-top {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 18px 20px;
+
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+
+  color: #7d8993;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.3px;
+}
+
+
+.wealth-preview-map {
+  position: relative;
+
+  min-height: 400px;
+
+  background:
+    radial-gradient(
+      circle at 42% 42%,
+      rgba(25,142,148,0.12),
+      transparent 32%
+    ),
+    #091017;
+}
+
+
+/* Decorative abstract "map" zones */
+
+.mini-zone {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255,255,255,0.22);
+
+  color: white;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+.zone-1 {
+  width: 32%;
+  height: 28%;
+
+  left: 18%;
+  top: 18%;
+
+  background: rgba(36,164,170,0.72);
+
+  transform: rotate(-8deg);
+}
+
+
+.zone-2 {
+  width: 27%;
+  height: 24%;
+
+  left: 48%;
+  top: 26%;
+
+  background: rgba(197,166,82,0.76);
+
+  transform: rotate(7deg);
+}
+
+
+.zone-3 {
+  width: 30%;
+  height: 25%;
+
+  left: 29%;
+  top: 47%;
+
+  background: rgba(137,127,91,0.70);
+
+  transform: rotate(4deg);
+}
+
+
+.zone-4 {
+  width: 24%;
+  height: 22%;
+
+  left: 59%;
+  top: 51%;
+
+  background: rgba(140,79,69,0.75);
+
+  transform: rotate(-5deg);
+}
+
+
+.zone-5 {
+  width: 22%;
+  height: 19%;
+
+  left: 43%;
+  top: 68%;
+
+  background: rgba(94,45,57,0.82);
+
+  transform: rotate(5deg);
+}
+
+
+.preview-map-copy {
+  position: absolute;
+
+  left: 22px;
+  bottom: 22px;
+
+  z-index: 5;
+
+  max-width: 245px;
+
+  padding: 15px 16px;
+
+  background: rgba(5,10,14,0.88);
+
+  border-left: 3px solid #deb83c;
+}
+
+
+.preview-map-copy small {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #deb83c;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+
+.preview-map-copy strong {
+  color: white;
+
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+
+.wealth-preview-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+
+.wealth-preview-bottom div {
+  padding: 18px;
+
+  text-align: center;
+
+  border-right: 1px solid rgba(255,255,255,0.07);
+}
+
+
+.wealth-preview-bottom div:last-child {
+  border-right: 0;
+}
+
+
+.wealth-preview-bottom span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #f5f6f7;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
+.wealth-preview-bottom small {
+  color: #6f7a84;
+
+  font-size: 10px;
+
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 960px) {
+
+  .wealth-feature-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .wealth-feature-copy {
+    max-width: none;
+  }
+
+}
+
+
+@media (max-width: 640px) {
+
+  .wealth-mini-signals {
+    grid-template-columns: 1fr;
+  }
+
+  .wealth-feature-title {
+    letter-spacing: -1.5px;
+  }
+
+  .wealth-preview-map {
+    min-height: 330px;
+  }
+
+}
