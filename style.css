@@ -740,3 +740,263 @@ h1 span{color:var(--gold)}
   }
 
 }
+
+/* =========================================================
+   WEALTH GENERATOR LANDING PAGE
+   ========================================================= */
+
+.wealth-landing-hero {
+
+  position: relative;
+
+  min-height: 720px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle at 72% 35%,
+      rgba(31,184,189,0.14),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 25% 65%,
+      rgba(222,184,60,0.10),
+      transparent 35%
+    ),
+    #080e14;
+
+  overflow: hidden;
+}
+
+
+.wealth-landing-hero::after {
+
+  content: "";
+
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  right: -180px;
+  top: 80px;
+
+  border-radius: 50%;
+
+  border:
+    1px solid rgba(32,184,189,0.10);
+
+  box-shadow:
+    0 0 0 70px rgba(32,184,189,0.025),
+    0 0 0 140px rgba(222,184,60,0.018);
+
+}
+
+
+.wealth-landing-inner {
+
+  position: relative;
+  z-index: 2;
+
+  max-width: 900px;
+}
+
+
+.wealth-landing-title {
+
+  max-width: 900px;
+
+  margin:
+    5px 0 30px;
+
+  font-size:
+    clamp(58px, 8vw, 112px);
+
+  line-height: 0.88;
+
+  letter-spacing: -5px;
+
+  color: #f5f6f7;
+}
+
+
+.wealth-landing-title span {
+
+  display: block;
+
+  color: #1fb8bd;
+
+}
+
+
+.wealth-landing-hook {
+
+  max-width: 780px;
+
+  margin-bottom: 25px;
+
+  font-size:
+    clamp(24px, 3vw, 38px);
+
+  line-height: 1.25;
+
+  color: #d6d9db;
+}
+
+
+.wealth-landing-hook strong {
+
+  display: block;
+
+  margin-top: 5px;
+
+  color: #deb83c;
+
+}
+
+
+.wealth-landing-copy {
+
+  max-width: 680px;
+
+  color: #99a4ad;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+.wealth-landing-copy strong {
+
+  color: #dfe2e4;
+
+}
+
+
+.wealth-landing-cta {
+
+  margin-top: 20px;
+
+}
+
+
+.wealth-how {
+
+  background: #0a1016;
+
+}
+
+
+.wealth-how-cards {
+
+  margin-top: 35px;
+
+}
+
+
+.wealth-how-card {
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+
+.wealth-how-card::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  height: 3px;
+  width: 100%;
+
+}
+
+
+.growth-card::after {
+
+  background: #24b9bd;
+
+}
+
+
+.stability-card::after {
+
+  background: #dfb83b;
+
+}
+
+
+.bump-card::after {
+
+  background: #a65c50;
+
+}
+
+
+.wpi-card::after {
+
+  background:
+    linear-gradient(
+      90deg,
+      #24b9bd,
+      #dfb83b
+    );
+
+}
+
+
+.wealth-how-icon {
+
+  margin-bottom: 24px;
+
+  font-size: 30px;
+
+  color: #deb83c;
+
+}
+
+
+.wealth-final-cta {
+
+  text-align: center;
+
+}
+
+
+.wealth-final-cta
+.button-row {
+
+  justify-content: center;
+
+  margin-top: 28px;
+
+}
+
+
+@media (
+  max-width: 700px
+) {
+
+  .wealth-landing-hero {
+
+    min-height: 620px;
+
+  }
+
+
+  .wealth-landing-title {
+
+    letter-spacing: -3px;
+
+  }
+
+}
