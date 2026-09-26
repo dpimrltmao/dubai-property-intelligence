@@ -1217,3 +1217,196 @@ h1 span{color:var(--gold)}
   }
 
 }
+
+/* ==========================================================
+   DPI LANGUAGE SELECTOR
+   ========================================================== */
+
+.lang-switcher {
+  position: relative;
+  z-index: 1000;
+}
+
+
+.lang-switcher summary {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 8px 10px;
+
+  border: 1px solid rgba(215, 179, 76, 0.28);
+
+  color: #d7b34c;
+
+  background: rgba(215, 179, 76, 0.04);
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+
+  cursor: pointer;
+
+  list-style: none;
+}
+
+
+.lang-switcher summary::-webkit-details-marker {
+  display: none;
+}
+
+
+.lang-switcher summary:hover {
+  background: rgba(215, 179, 76, 0.10);
+  border-color: rgba(215, 179, 76, 0.55);
+}
+
+
+.lang-arrow {
+  color: #77848c;
+  font-size: 11px;
+}
+
+
+.lang-menu {
+  position: absolute;
+
+  top: calc(100% + 10px);
+  right: 0;
+
+  min-width: 175px;
+
+  padding: 7px;
+
+  border: 1px solid rgba(215, 179, 76, 0.25);
+
+  background: #091118;
+
+  box-shadow:
+    0 22px 60px
+    rgba(0, 0, 0, 0.45);
+}
+
+
+.lang-menu a,
+.lang-coming {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding: 10px 11px;
+
+  color: #aab4ba;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  border: 0;
+}
+
+
+.lang-menu a:hover {
+  color: #f4f6f7;
+
+  background:
+    rgba(255, 255, 255, 0.04);
+}
+
+
+.lang-menu a.active {
+  color: #19b6bb;
+}
+
+
+.lang-coming {
+  color: #58646b;
+
+  cursor: default;
+}
+
+
+.lang-coming small {
+  margin-left: 12px;
+
+  color: #806f43;
+
+  font-size: 8px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.7px;
+}
+
+
+/* ==========================================================
+   ARABIC / RTL
+   ========================================================== */
+
+html[lang="ar"] body {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .brand {
+  direction: ltr;
+}
+
+
+html[dir="rtl"] .nav {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .lang-menu {
+  right: auto;
+  left: 0;
+
+  text-align: right;
+}
+
+
+html[dir="rtl"] .lang-coming small {
+  margin-left: 0;
+  margin-right: 12px;
+}
+
+
+html[dir="rtl"] .hero-copy,
+html[dir="rtl"] .section-intro,
+html[dir="rtl"] .wealth-feature-copy,
+html[dir="rtl"] .about-copy,
+html[dir="rtl"] .card,
+html[dir="rtl"] .hero-card,
+html[dir="rtl"] .subscribe-box,
+html[dir="rtl"] .footer {
+  text-align: right;
+}
+
+
+html[dir="rtl"] .wealth-preview-card,
+html[dir="rtl"] .hero-card-top,
+html[dir="rtl"] .wealth-preview-top,
+html[dir="rtl"] .wealth-preview-bottom {
+  direction: rtl;
+}
+
+
+html[dir="rtl"] .brand-mark,
+html[dir="rtl"] [dir="ltr"] {
+  direction: ltr;
+}
+
+
+@media (max-width: 760px) {
+
+  .lang-menu {
+    right: auto;
+    left: 0;
+  }
+
+}
