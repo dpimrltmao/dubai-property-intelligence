@@ -1410,3 +1410,121 @@ html[dir="rtl"] [dir="ltr"] {
   }
 
 }
+
+/* ==========================================================
+   MOBILE LANGUAGE SELECTOR FIX
+   ========================================================== */
+
+@media (max-width: 640px) {
+
+  .site-header {
+    position: relative;
+    z-index: 2000;
+    overflow: visible;
+  }
+
+  .nav-wrap {
+    position: relative;
+
+    min-height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: visible;
+  }
+
+  /* Keep the DPI logo visible */
+
+  .brand {
+    position: relative;
+    z-index: 2002;
+
+    flex: 0 1 auto;
+
+    max-width: calc(100% - 80px);
+  }
+
+  .brand-name {
+    display: none;
+  }
+
+
+  /* Prevent the desktop navigation from pushing
+     the language selector off-screen */
+
+  .nav {
+    position: static;
+
+    display: flex;
+    align-items: center;
+
+    width: auto;
+
+    overflow: visible;
+  }
+
+
+  /* Hide long navigation links in portrait */
+
+  .nav > a {
+    display: none;
+  }
+
+
+  /* Always show language selector */
+
+  .lang-switcher {
+    display: block !important;
+
+    position: absolute;
+
+    top: 50%;
+    right: 14px;
+
+    transform: translateY(-50%);
+
+    z-index: 3000;
+
+    flex: 0 0 auto;
+  }
+
+
+  .lang-switcher summary {
+    min-width: 52px;
+
+    justify-content: center;
+
+    padding: 8px 10px;
+
+    white-space: nowrap;
+  }
+
+
+  .lang-menu {
+    top: calc(100% + 10px);
+
+    right: 0;
+    left: auto;
+
+    min-width: 170px;
+
+    z-index: 4000;
+  }
+
+
+  /* Arabic version:
+     selector moves to the opposite side */
+
+  html[dir="rtl"] .lang-switcher {
+    right: auto;
+    left: 14px;
+  }
+
+  html[dir="rtl"] .lang-menu {
+    right: auto;
+    left: 0;
+  }
+
+}
