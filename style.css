@@ -1528,3 +1528,76 @@ html[dir="rtl"] [dir="ltr"] {
   }
 
 }
+/* ==========================================================
+   ARABIC WEALTH GENERATOR LANDING PAGE
+   ========================================================== */
+
+html[lang="ar"] .wealth-landing-inner,
+html[lang="ar"] .wealth-how,
+html[lang="ar"] .wealth-final-cta {
+  text-align: right;
+}
+
+
+html[lang="ar"] .wealth-landing-title {
+  direction: ltr;
+  text-align: right;
+}
+
+
+html[lang="ar"] .wealth-landing-title span {
+  display: inline-block;
+}
+
+
+html[lang="ar"] .wealth-hero-questions {
+  direction: rtl;
+}
+
+
+html[lang="ar"] .wealth-hero-question {
+  text-align: right;
+}
+
+
+html[lang="ar"] .wealth-hero-question span {
+  direction: ltr;
+  text-align: right;
+}
+
+
+html[lang="ar"] .wealth-landing-hook,
+html[lang="ar"] .wealth-landing-copy {
+  text-align: right;
+}
+
+
+html[lang="ar"] .wealth-how-cards {
+  direction: rtl;
+}
+
+
+html[lang="ar"] .wealth-how-card {
+  text-align: right;
+}
+
+
+html[lang="ar"] .wealth-how-icon {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+
+html[lang="ar"] .wealth-final-cta .section-intro {
+  text-align: center;
+}
+
+
+html[lang="ar"] .wealth-final-cta {
+  text-align: center;
+}
+
+
+html[lang="ar"] .wealth-final-cta .button-row {
+  justify-content: center;
+}
