@@ -5,75 +5,6 @@
 
 <head>
 
-    <!-- ========================================================
-     DPI INTERACTIVE MAP SEO
-     ======================================================== -->
-
-<title>
-Interactive Wealth Generator Map | Dubai Property Intelligence
-</title>
-
-<meta
-  name="description"
-  content="Explore the DPI Wealth Generator Map, an interactive historical analysis of Dubai ready residential apartment price growth, stability and price movement across qualifying communities."
->
-
-<meta
-  name="robots"
-  content="index, follow, max-image-preview:large"
->
-
-<link
-  rel="canonical"
-  href="https://dpi-os.com/wealth-generator-map/"
->
-
-
-<!-- Open Graph -->
-
-<meta
-  property="og:type"
-  content="website"
->
-
-<meta
-  property="og:site_name"
-  content="Dubai Property Intelligence"
->
-
-<meta
-  property="og:title"
-  content="Interactive DPI Wealth Generator Map"
->
-
-<meta
-  property="og:description"
-  content="Click a Dubai community and explore its historical growth, price stability, price bumpiness and Wealth Perseverance Index."
->
-
-<meta
-  property="og:url"
-  content="https://dpi-os.com/wealth-generator-map/"
->
-
-
-<!-- Twitter / X -->
-
-<meta
-  name="twitter:card"
-  content="summary_large_image"
->
-
-<meta
-  name="twitter:title"
-  content="Interactive DPI Wealth Generator Map"
->
-
-<meta
-  name="twitter:description"
-  content="Explore historical Dubai property performance community by community."
->
-
 <meta charset="UTF-8">
 
 <meta
@@ -1857,23 +1788,230 @@ body.hiw-open {
 </style>
 
 <!-- DPI HOW IT WORKS CSS END -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "DPI Wealth Generator Map",
-  "url": "https://dpi-os.com/wealth-generator-map/",
-  "applicationCategory": "BusinessApplication",
-  "operatingSystem": "Web",
-  "description": "An interactive historical analysis tool for comparing Dubai residential apartment price growth, stability and price movement using transaction evidence.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Dubai Property Intelligence",
-    "url": "https://dpi-os.com/"
-  }
+
+
+<!-- DPI LANGUAGE VERSIONS -->
+
+<link
+    rel="alternate"
+    hreflang="en"
+    href="https://dpi-os.com/wealth-generator-map/"
+>
+
+<link
+    rel="alternate"
+    hreflang="ar"
+    href="https://dpi-os.com/ar/wealth-generator-map/"
+>
+
+<link
+    rel="alternate"
+    hreflang="x-default"
+    href="https://dpi-os.com/wealth-generator-map/"
+>
+
+
+<style id="dpi-map-language-selector-css">
+
+/* ==========================================================
+   DPI MAP LANGUAGE SELECTOR
+   ========================================================== */
+
+.map-language-switcher {
+
+    position: relative;
+
+    z-index: 9999;
+
+    flex: 0 0 auto;
+
+    margin-left: 10px;
 }
-</script>
-    
+
+
+.map-language-switcher summary {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    min-width: 54px;
+
+    padding: 8px 10px;
+
+    border:
+        1px solid
+        rgba(215,179,76,.30);
+
+    background:
+        rgba(215,179,76,.04);
+
+    color: #D7B34C;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: .5px;
+
+    cursor: pointer;
+
+    list-style: none;
+
+    white-space: nowrap;
+}
+
+
+.map-language-switcher summary::-webkit-details-marker {
+
+    display: none;
+}
+
+
+.map-language-switcher summary:hover {
+
+    background:
+        rgba(215,179,76,.10);
+
+    border-color:
+        rgba(215,179,76,.55);
+}
+
+
+.map-language-menu {
+
+    position: absolute;
+
+    top: calc(100% + 9px);
+
+    right: 0;
+
+    min-width: 175px;
+
+    padding: 7px;
+
+    border:
+        1px solid
+        rgba(215,179,76,.25);
+
+    background: #091118;
+
+    box-shadow:
+        0 22px 60px
+        rgba(0,0,0,.52);
+
+    z-index: 10000;
+}
+
+
+.map-language-menu a,
+.map-language-menu span {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding: 10px 11px;
+
+    color: #AAB4BA;
+
+    font-size: 11px;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+
+.map-language-menu a:hover {
+
+    color: #F3F5F5;
+
+    background:
+        rgba(255,255,255,.035);
+}
+
+
+.map-language-menu a.active {
+
+    color: #19B6BB;
+}
+
+
+.map-language-menu span {
+
+    color: #59656C;
+
+    cursor: default;
+}
+
+
+.map-language-menu small {
+
+    margin-left: 10px;
+
+    color: #806F43;
+
+    font-size: 8px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .5px;
+}
+
+
+/* ==========================================================
+   MOBILE PORTRAIT
+   ========================================================== */
+
+@media (max-width: 760px) {
+
+    .map-language-switcher {
+
+        display: block !important;
+
+        position: relative;
+
+        z-index: 99999;
+
+        margin-left: 8px;
+    }
+
+
+    .map-language-switcher summary {
+
+        min-width: 52px;
+
+        padding: 8px 9px;
+    }
+
+
+    .map-language-menu {
+
+        right: 0;
+
+        left: auto;
+
+        min-width: 165px;
+    }
+
+}
+
+</style>
+
 </head>
 
 
@@ -1923,7 +2061,46 @@ body.hiw-open {
                 Subscribe
             </a>
 
-        </nav>
+        
+<details class="map-language-switcher">
+
+    <summary>
+        EN ⌄
+    </summary>
+
+    <div class="map-language-menu">
+
+        <a
+            class="active"
+            href="/wealth-generator-map/"
+            lang="en"
+        >
+            English
+        </a>
+
+        <a
+            href="/ar/wealth-generator-map/"
+            lang="ar"
+            dir="rtl"
+        >
+            العربية
+        </a>
+
+        <span>
+            Français
+            <small>Soon</small>
+        </span>
+
+        <span>
+            Español
+            <small>Soon</small>
+        </span>
+
+    </div>
+
+</details>
+
+</nav>
 
     </div>
 
