@@ -2038,3 +2038,9 @@ a.social-pill:hover{
     margin-bottom:3px;
   }
 }
+
+/* Publications archive: full-card tap targets */
+.publication-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;cursor:pointer;transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease}
+.publication-card:hover,.publication-card:focus-visible{border-color:var(--teal);transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.publication-card:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+.publication-cta{display:inline-block;margin-top:auto;padding-top:20px;color:var(--teal);font-weight:700}
