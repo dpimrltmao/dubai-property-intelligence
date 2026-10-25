@@ -2,7 +2,7 @@
 ## Dubai's Buyer Opportunity: Real or Illusion?
 **Deck:** Sales are slowing. But are buyers actually getting better deals?
 
-**Editorial status:** FIRST DRAFT — NOT FOR PUBLICATION  
+**Editorial status:** RESEARCH-VERIFIED DRAFT v0.2 — NOT FOR PUBLICATION  
 **Draft date:** 25 October 2026 (UAE)  
 **Proposed release:** Tuesday, 27 October 2026  
 **Author:** MR.LTMAO  
@@ -113,20 +113,45 @@ Sounds attractive. But what if the achievable annual rent turns out to be **AED 
 
 ---
 
-## 04 | Where might a buyer find leverage?
+## 04 | Where should buyers investigate more carefully?
 
-This is a **screening framework**, not a current ranking of named communities.
+### Three community signals — not three bargains
 
-### Candidate A: Comparable ready home with a motivated seller
-There may be a real advantage when the seller has reduced the ask **and** recent matched transactions support that reduction. Verify building quality, title/ownership, service-charge history and rental demand. A listing that has been online for months is *not by itself* proof of distress.
+The **frozen September 2026 edition** of Dubai Real Estate Data uses registered Dubai Land Department transactions and reports the change in median AED per square foot for **ready (resale) apartments and villas only**, comparing the **12 months ending 30 September 2026** with the **preceding 12 months**. Each area must have **at least 50 ready sales in each period** to appear in its ranked screen. Source data was captured by the provider as registered by 12 October; the edition was published on 15 October. [S8] [S9]
 
-### Candidate B: Off-plan home with a promotional offer
-An incentive can change the required cash today without changing the long-term economics. Evaluate the all-in contract price, unit-specific payment schedule, developer delivery history, competing supply, handover assumptions and likely resale market. An attractive payment plan is not a guarantee of value.
+| Screening area | Ready-resale median, AED/sq ft | Year-on-year median change | Signal, not verdict |
+|---|---:|---:|---|
+| Dubai Science Park | 1,375 | −9.7% | Investigate comparable ready-apartment sales and condition |
+| Al Furjan | 1,144 | −5.4% | Compare older and newer stock separately before judging |
+| Al Kifaf | 1,947 | −5.3% | Check building, unit type and sample size carefully |
 
-### Candidate C: Income-producing property with a believable cash flow
-A property with slightly less headline yield can be stronger if tenant demand, maintenance, vacancy and resale liquidity are more resilient. Compare the achievable net yield and realistic downside, not just advertised gross returns.
+**Interpretation:** These communities deserve closer examination because *their ready-resale area medians* have moved lower in a comparable methodological screen. They are **not a ranking of investment returns, developer quality, affordability or available discounts**. Even ready-only medians can change when different buildings, sizes or grades trade. There are no matched-unit or matched-building sale pairs here, and the provider does not publish the exact prior-window counts in this summary. That limits the confidence of any claim about a specific property's true repricing.
 
-**A community-level claim requires its own published evidence.** Before the final edition, DPI should populate a compact matched-sales matrix for at least three communities, with consistent dates, asset types, sample sizes and confidence flags. Do not reuse Issue 003's community movement table as new October research.
+**Confidence:** High that the September frozen edition reports these figures; **medium** that they indicate weaker area-level resale price momentum; **low / unassessed** that a specific listed home is now a bargain. The figures were not independently recomputed by DPI from raw DLD records.
+
+### An illuminating contradiction: Al Furjan
+
+An updated **19 October** snapshot from the *same data provider* shows **+14.2% year-on-year** in Al Furjan's median price per square foot for **all registered built-home sales** on its areas board, while its **ready-resale-only** momentum board shows **−7.0%**. [S10] The all-sales number is exposed to off-plan launch mix, whereas the ready resale screen excludes those launches. The precise dataset also advanced by several days after the frozen September edition, which is why the **−7.0% latest value must not be substituted into the frozen-table −5.4%** without also changing its reference period.
+
+**DPI lesson:** Two true statistics about one community can tell different stories when they measure different kinds of property. That is not proof of manipulation, nor proof of widespread distress — it is a reason to read the definition first.
+
+> The area is a starting point. The building, the unit, the rent and the exit decide whether it is an opportunity.
+
+### Our recommended next research step — actual matched sales
+
+For any property DPI might mention as a **genuine buyer opportunity**, collect at least several registered ready-home sales with the same:
+- Building / immediate comparable catchment and property rights
+- Apartment or villa type, bedrooms, approximate usable area and condition
+- Close transaction dates, with any adjustments explained
+- Distinction between actual registered prices and marketed asking prices
+
+Compare actual negotiated offers against these matched transactions; then check service charges, achievable rent, financing and competing deliveries. **No building-level “verified discount” claim is approved for this draft.**
+
+### How buyers could act — without treating these as recommendations
+
+A buyer looking at Al Furjan can ask if the exact apartment has fallen below recently traded comparable ready homes — **not** whether the community's all-sales median is up or down. In Al Kifaf, a thinner screen particularly increases the need for property-level verification. In Dubai Science Park, compare new launches and existing homes separately, instead of assuming a broad price drop applies to both.
+
+Off-plan incentives and gross rental yields belong to separate tests; they cannot be used as substitutes for a comparable sale price.
 
 ---
 
@@ -197,7 +222,7 @@ The market's transition may create opportunities. It may also create persuasive 
 6. Recent DLD registrations are subject to lag and revisions. DLD open-data explorer requires interactive filters/verification; direct raw data extraction has not been completed for this draft.
 7. For supply, “scheduled” is not “delivered.” For index movements, “value index” is not a price discount that applies to every unit.
 8. All teaching-example inputs are **hypothetical** and exclude finance and acquisition costs; no property-level claim is being made.
-9. Before release, add three community matched-comparable cases only if consistently reproduced. Otherwise retain the non-geographic Buyer Opportunity Test.
+9. Three area-level resale momentum screens have been added (Section 04), with identical frozen-edition definitions. They are not matched-unit comparables. Do not upgrade them to claims of investment bargains without obtaining building- and unit-level matched registrations.
 10. This publication is independent educational research, not personalized financial, investment, legal or tax advice.
 
 ## Source register
@@ -209,5 +234,9 @@ The market's transition may create opportunities. It may also create persuasive 
 - **[S5]** Dubai Land Department, *Service Charge Index* official service. https://dubailand.gov.ae/en/eservices/service-charge-index-overview/ — primary service-charge verification tool.
 - **[S6]** Dubai Land Department, *Rental Index*. https://dubailand.gov.ae/en/eservices/rental-index/ — rental benchmarking tool; not an achieved-rent sample for this draft.
 - **[S7]** DPI Issue 003, *Dubai Is Cooling — But Unevenly*, 13 Oct 2026. https://dpi-os.com/issue-003.html — previous-edition continuity, not independent market corroboration.
+
+- **[S8]** Dubai Real Estate Data, *September 2026 frozen report*, published 15 Oct 2026, data registered by 12 Oct 2026. https://www.dubairealestatedata.com/report/2026-09 — area-level ready resale medians, trailing 12 months ended 30 Sept versus prior 12 months, minimum 50 sales per area in each window. Secondary analysis of official DLD/Dubai Pulse registrations; not independently recalculated by DPI.
+- **[S9]** Dubai Real Estate Data, *Methodology v2.1*. https://www.dubairealestatedata.com/methodology — definition of ready resale momentum and sample guards.
+- **[S10]** Dubai Real Estate Data, *Market overview* and *Areas*, updated 19 Oct 2026 (data through 16 Oct). https://www.dubairealestatedata.com/market and https://www.dubairealestatedata.com/areas — Al Furjan all-sales +14.2% versus ready-resale −7.0%; changed reference snapshot relative to frozen September edition.
 
 **FINAL CHECK BEFORE RELEASE:** Source access; definitions; numbers; math; latest primary updates; all citations; legal wording; cover and layout; Arabic/French/Spanish translations; website previews and archive; Brevo newsletter test; Metricool conflict check; MR.LTMAO approval.
