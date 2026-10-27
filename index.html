@@ -214,7 +214,7 @@
     Wealth Generator Map
   </a>
 
-  <a class="nav-advisor" href="https://advisor.dpi-os.com/">
+  <a class="nav-advisor" href="https://advisor.dpi-os.com/" data-dpi-advisor-link="navigation">
     Property Advisor
   </a>
 
@@ -381,7 +381,7 @@
           Explore the numbers at your own pace with five simple financial tools.
         </p>
         <div class="button-row">
-          <a class="btn btn-primary" href="https://advisor.dpi-os.com/">Explore Property Advisor →</a>
+          <a class="btn btn-primary" href="https://advisor.dpi-os.com/" data-dpi-advisor-link="feature_button">Explore Property Advisor →</a>
         </div>
         <p class="micro advisor-feature-note">
           Illustrative planning only. Not a valuation, mortgage approval or investment recommendation.
@@ -854,7 +854,7 @@
       <a href="issue-003.html">Issue 003</a>
       <a href="issue-002.html">Issue 002</a>
       <a href="issue-001.html">Issue 001</a>
-      <a href="https://advisor.dpi-os.com/">Property Advisor</a>
+      <a href="https://advisor.dpi-os.com/" data-dpi-advisor-link="footer">Property Advisor</a>
       <a href="#about">About</a>
       <a href="#subscribe">Subscribe</a>
     </div>
@@ -893,5 +893,16 @@
   </div>
 </footer>
 
+  <!-- DPI Phase 1: count clicks from the publication homepage to the Advisor. -->
+  <script>
+    document.addEventListener('click', function (event) {
+      var link = event.target.closest('a[data-dpi-advisor-link]');
+      if (!link || typeof gtag !== 'function') return;
+      gtag('event', 'advisor_link_click', {
+        link_placement: link.getAttribute('data-dpi-advisor-link'),
+        link_url: link.href
+      });
+    });
+  </script>
 </body>
 </html>
