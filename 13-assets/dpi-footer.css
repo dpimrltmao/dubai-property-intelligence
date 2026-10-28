@@ -1,0 +1,58 @@
+/* DPI Unified Publication Footer · v1 · 28 Oct 2026
+ * Shared across homepages and Issues 001–004 in EN/AR/FR/ES.
+ * Scoped to #dpi-global-footer to avoid modifying any page-specific designs.
+ */
+#dpi-global-footer,
+#dpi-global-footer *{box-sizing:border-box}
+#dpi-global-footer{
+  --dpi-foot-night:#060f19;--dpi-foot-ink:#071624;--dpi-foot-gold:#d9b46d;
+  --dpi-foot-text:#f6f2e9;--dpi-foot-muted:#adbac5;--dpi-foot-line:rgba(217,180,109,.22);
+  position:relative;isolation:isolate;overflow:hidden;
+  margin:0;padding:0;
+  background:radial-gradient(ellipse at 52% -22%,rgba(206,153,78,.115),transparent 61%),linear-gradient(180deg,#071824 0%,#050e17 100%);
+  border-top:1px solid rgba(225,183,105,.36);
+  color:var(--dpi-foot-text);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  font-size:14px;line-height:1.55;text-align:start
+}
+#dpi-global-footer:before{content:"";position:absolute;inset:0 10% auto;height:1px;background:linear-gradient(90deg,transparent,rgba(248,220,166,.57),transparent)}
+#dpi-global-footer .dpi-footer-inner{max-width:1180px;width:calc(100% - 68px);margin:0 auto;padding:52px 0 27px}
+#dpi-global-footer .dpi-footer-layout{display:grid;grid-template-columns:minmax(230px,1fr) minmax(0,1.68fr);gap:48px;align-items:start}
+#dpi-global-footer .dpi-footer-brand{max-width:345px}
+#dpi-global-footer .dpi-footer-mark{display:inline-block;font-size:33px;line-height:1;font-weight:800;letter-spacing:.09em;color:var(--dpi-foot-gold);text-decoration:none;text-shadow:0 0 26px rgba(222,171,91,.19);direction:ltr;unicode-bidi:isolate}
+#dpi-global-footer .dpi-footer-name{margin:16px 0 6px;font-size:16px;font-weight:600;letter-spacing:.045em;color:#f6f2e9}
+#dpi-global-footer .dpi-footer-tagline{font:normal clamp(16px,1.5vw,20px)/1.4 Georgia,"Times New Roman",serif;color:#e1c492;margin:0;max-width:315px}
+#dpi-global-footer .dpi-footer-right{min-width:0}
+#dpi-global-footer .dpi-footer-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:14px 28px;padding-top:4px}
+#dpi-global-footer .dpi-footer-nav a{color:#ced5dc;font-size:14px;font-weight:600;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:4px;transition:color .18s,border-color .18s;white-space:nowrap}
+#dpi-global-footer .dpi-footer-nav a:hover,#dpi-global-footer .dpi-footer-nav a:focus-visible{color:#f7d79d;border-color:#d9b46d}
+#dpi-global-footer .dpi-footer-social{display:flex;align-items:center;flex-wrap:wrap;gap:11px;margin-top:34px}
+#dpi-global-footer .dpi-footer-social-label{color:#b0bcc7;font-size:11px;text-transform:uppercase;letter-spacing:.17em;font-weight:700;margin-inline-end:8px;white-space:nowrap}
+#dpi-global-footer .dpi-footer-icon{width:46px;height:46px;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(195,207,216,.27);border-radius:50%;background:linear-gradient(155deg,rgba(27,51,65,.43),rgba(4,16,26,.75));color:#c6d1d9;text-decoration:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.04);transition:border-color .18s,background .18s,transform .18s,color .18s}
+#dpi-global-footer .dpi-footer-icon svg{display:block;width:19px;height:19px;fill:currentColor}
+#dpi-global-footer .dpi-footer-icon:hover,#dpi-global-footer .dpi-footer-icon:focus-visible{border-color:#edc685;background:#173548;color:#f8dfa6;transform:translateY(-2px)}
+#dpi-global-footer .dpi-footer-bottom{border-top:1px solid rgba(200,211,218,.11);margin-top:36px;padding-top:20px;display:flex;gap:25px;justify-content:space-between;align-items:start}
+#dpi-global-footer .dpi-footer-disclaimer{max-width:850px;color:#9caebc;font-size:12px;margin:0;line-height:1.65}
+#dpi-global-footer .dpi-footer-copy{flex-shrink:0;margin:0;color:#8699a8;font-size:12px;direction:ltr;unicode-bidi:isolate}
+#dpi-global-footer a:focus-visible{outline:2px solid #f2cf8e;outline-offset:4px}
+html[dir="rtl"] #dpi-global-footer,
+#dpi-global-footer[dir="rtl"]{font-family:"Noto Sans Arabic",Tahoma,"Segoe UI",Arial,sans-serif}
+html[dir="rtl"] #dpi-global-footer .dpi-footer-tagline{font-family:"Noto Naskh Arabic",Tahoma,serif}
+#dpi-global-footer .dpi-footer-social-icons{display:flex;flex-wrap:wrap;gap:11px;direction:ltr}
+@media(max-width:850px){
+  #dpi-global-footer .dpi-footer-layout{grid-template-columns:1fr;gap:29px}
+  #dpi-global-footer .dpi-footer-brand{max-width:none}
+  #dpi-global-footer .dpi-footer-social{margin-top:26px}
+}
+@media(max-width:580px){
+  #dpi-global-footer .dpi-footer-inner{width:calc(100% - 34px);padding:38px 0 22px}
+  #dpi-global-footer .dpi-footer-nav{gap:11px 18px}
+  #dpi-global-footer .dpi-footer-nav a{font-size:13px;white-space:normal}
+  #dpi-global-footer .dpi-footer-social{gap:13px}
+  #dpi-global-footer .dpi-footer-social-label{flex:0 0 100%;margin:0}
+  #dpi-global-footer .dpi-footer-icon{width:42px;height:42px}
+  #dpi-global-footer .dpi-footer-bottom{display:block;margin-top:30px}
+  #dpi-global-footer .dpi-footer-copy{margin-top:13px}
+}
+@media(prefers-reduced-motion:reduce){
+  #dpi-global-footer .dpi-footer-nav a,#dpi-global-footer .dpi-footer-icon{transition:none}
+}
