@@ -27,7 +27,7 @@
 #dpi-global-footer .dpi-footer-nav a:hover,#dpi-global-footer .dpi-footer-nav a:focus-visible{color:#f7d79d;border-color:#d9b46d}
 #dpi-global-footer .dpi-footer-social{display:flex;align-items:center;flex-wrap:wrap;gap:11px;margin-top:34px}
 #dpi-global-footer .dpi-footer-social-label{color:#b0bcc7;font-size:11px;text-transform:uppercase;letter-spacing:.17em;font-weight:700;margin-inline-end:8px;white-space:nowrap}
-#dpi-global-footer .dpi-footer-icon{width:46px;height:46px;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(195,207,216,.27);border-radius:50%;background:linear-gradient(155deg,rgba(27,51,65,.43),rgba(4,16,26,.75));color:#c6d1d9;text-decoration:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.04);transition:border-color .18s,background .18s,transform .18s,color .18s}
+#dpi-global-footer .dpi-footer-icon{width:46px;height:46px;min-width:46px;min-height:46px;flex:0 0 46px;aspect-ratio:1/1;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(195,207,216,.27);border-radius:50% !important;background:linear-gradient(155deg,rgba(27,51,65,.43),rgba(4,16,26,.75));color:#c6d1d9;text-decoration:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.04);transition:border-color .18s,background .18s,transform .18s,color .18s}
 #dpi-global-footer .dpi-footer-icon svg{display:block;width:19px;height:19px;fill:currentColor}
 #dpi-global-footer .dpi-footer-icon:hover,#dpi-global-footer .dpi-footer-icon:focus-visible{border-color:#edc685;background:#173548;color:#f8dfa6;transform:translateY(-2px)}
 #dpi-global-footer .dpi-footer-bottom{border-top:1px solid rgba(200,211,218,.11);margin-top:36px;padding-top:20px;display:flex;gap:25px;justify-content:space-between;align-items:start}
@@ -49,7 +49,7 @@ html[dir="rtl"] #dpi-global-footer .dpi-footer-tagline{font-family:"Noto Naskh A
   #dpi-global-footer .dpi-footer-nav a{font-size:13px;white-space:normal}
   #dpi-global-footer .dpi-footer-social{gap:13px}
   #dpi-global-footer .dpi-footer-social-label{flex:0 0 100%;margin:0}
-  #dpi-global-footer .dpi-footer-icon{width:42px;height:42px}
+  #dpi-global-footer .dpi-footer-icon{width:42px;height:42px;min-width:42px;min-height:42px;flex-basis:42px}
   #dpi-global-footer .dpi-footer-bottom{display:block;margin-top:30px}
   #dpi-global-footer .dpi-footer-copy{margin-top:13px}
 }
