@@ -93,6 +93,107 @@ body{background:#030d16;color:var(--cream)}
 .source-section{background:#05131e}
 @media(max-width:720px){#s2 .split-copy:before{margin-bottom:17px}#s2 .comparison{padding:24px 22px}#s2 .comparison .row{min-height:115px}#s2 .comparison b{font-size:clamp(39px,9.6vw,58px)}#s5 .checks{gap:13px}#s5 .check{min-height:205px}}
 
+
+/* DPI Issue 004 — Magazine fidelity art direction: bespoke editorial spreads, not repeated dashboards. */
+.magazine-feature,.investment-feature,.dossier-feature{position:relative;isolation:isolate;overflow:hidden;color:#f8f2e8}
+.magazine-feature{background:radial-gradient(ellipse at 48% 5%,rgba(217,173,106,.08),transparent 53%),linear-gradient(180deg,rgba(3,13,21,.19),#061723 66%),url('/13-assets/dpi-hero-skyline.png') center top/cover no-repeat,#061723;padding:105px 0 94px;border-block:1px solid rgba(233,182,108,.25)}
+.magazine-feature:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(2,11,19,.46) 0%,rgba(4,17,28,.79) 29%,#041521 85%);pointer-events:none}
+.magazine-feature:after{content:"";position:absolute;inset:auto 12% 0;height:1px;background:linear-gradient(90deg,transparent,rgba(253,208,131,.56),transparent)}
+.magazine-chapter{display:flex;gap:18px;align-items:center;font-size:11px;letter-spacing:.20em;text-transform:uppercase;font-weight:750;color:#f3cb87}
+.magazine-chapter>span:last-child{font-size:10px;color:#b9cbd4;white-space:nowrap}
+.chapter-rule{height:1px;flex:1;background:linear-gradient(90deg,rgba(245,196,114,.75),rgba(220,169,96,.03))}
+.magazine-head{max-width:1050px;margin:37px 0 35px}
+.magazine-head h2,.investment-heading h2,.dossier-intro h2{font-family:"Iowan Old Style",Baskerville,Georgia,serif;font-weight:400;font-size:clamp(52px,6.1vw,91px);line-height:1.02;letter-spacing:-.047em;margin:0;color:#fffaf0;text-shadow:0 12px 38px rgba(0,0,0,.30)}
+.magazine-head h2 em,.investment-heading h2 em,.dossier-intro h2 em{font-style:normal;color:#f5ce8a}
+.magazine-head>p{font-size:20px;line-height:1.5;color:#d4dee2;margin:22px 0 0}
+.magazine-head>p strong{color:#fff7ea}
+.magazine-head>p span{font-size:14px;color:#aebfc7}
+.feature-evidence{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:36px;perspective:1400px}
+.evidence-tile{position:relative;min-height:316px;border-radius:18px;padding:30px 33px 27px;border:1px solid rgba(247,209,140,.64);background:radial-gradient(ellipse at 83% -8%,rgba(190,155,96,.18),transparent 55%),linear-gradient(158deg,rgba(20,51,70,.95),rgba(5,24,37,.98) 83%);box-shadow:inset 1px 1px 0 rgba(255,247,221,.22),inset -2px -2px 0 rgba(18,70,82,.32),0 17px 0 rgba(0,10,17,.50),0 34px 51px rgba(0,0,0,.54);overflow:hidden}
+.evidence-tile:before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,transparent,#ffe4b0 30%,rgba(227,158,67,.22) 75%,transparent);box-shadow:0 0 19px 1px rgba(250,189,100,.2)}
+.evidence-tile:after{content:"";position:absolute;right:-2%;bottom:-10%;height:95%;width:45%;background:repeating-linear-gradient(90deg,transparent 0 24px,rgba(230,188,116,.07) 25px 26px),repeating-linear-gradient(0deg,transparent 0 31px,rgba(230,188,116,.07) 32px 33px);transform:skewY(-11deg) rotate(-4deg);mask-image:linear-gradient(0deg,black,transparent 85%);pointer-events:none}
+.evidence-tile.positive{border-bottom-color:rgba(152,236,210,.75)}
+.evidence-tile.negative{border-bottom-color:rgba(246,160,156,.72)}
+.tile-top{display:flex;justify-content:space-between;align-items:center;gap:15px;font-size:12px;font-weight:700;color:#f3d8ab;letter-spacing:.12em}
+.tile-glyph{font-size:28px;font-weight:300;color:#ddc49a}
+.tile-number{font-size:clamp(80px,8.5vw,139px);font-weight:750;line-height:1;letter-spacing:-.078em;margin:23px 0 16px;filter:drop-shadow(2px 6px 2px #0007) drop-shadow(0 0 21px rgba(155,228,204,.2))}
+.tile-number span{font-size:.62em;vertical-align:14%;letter-spacing:-.05em}
+.evidence-tile.positive .tile-number{color:#b0f0dd;text-shadow:0 2px 0 #417b71,0 5px 0 #234c49,0 8px 0 rgba(9,36,35,.9),0 10px 27px rgba(119,236,200,.3)}
+.evidence-tile.negative .tile-number{color:#ffb1a9;text-shadow:0 2px 0 #a26767,0 5px 0 #673d43,0 8px 0 rgba(34,16,22,.9),0 10px 27px rgba(255,155,147,.20)}
+.evidence-tile p{font-size:15px;color:#d6e3e9;max-width:390px;margin:0;line-height:1.55}
+.tile-foot{margin-top:25px;border-top:1px solid rgba(239,207,156,.21);padding-top:13px;font-size:10px;color:#96aebb;letter-spacing:.07em}
+.magazine-lower{display:grid;grid-template-columns:.84fr 1.16fr;gap:65px;align-items:center;margin:104px 0 52px}
+.evidence-kicker{font-size:12px;font-weight:800;letter-spacing:.18em;color:#f0c67f}
+.evidence-explain h3{font-size:clamp(28px,3vw,42px);line-height:1.2;letter-spacing:-.024em;margin:16px 0;font-weight:400;color:#fff4e2}
+.evidence-explain h3 em{font-style:normal;color:#dfb97a}
+.evidence-explain p{max-width:480px;line-height:1.7;color:#baccd3;font-size:15px}
+.diverging-chart{padding:29px 33px 27px;border-radius:15px;background:linear-gradient(130deg,rgba(14,43,60,.93),rgba(5,22,34,.95));border:1px solid rgba(216,170,105,.43);box-shadow:inset 0 1px 0 rgba(244,220,174,.12),0 22px 40px rgba(0,0,0,.27)}
+.chart-heading,.chart-label,.chart-axis{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.chart-heading{font-size:10px;color:#d9bc8b;letter-spacing:.12em;padding-bottom:21px;border-bottom:1px solid rgba(217,180,109,.23);margin-bottom:19px}
+.chart-heading span:last-child{color:#9cb4c0}
+.chart-label{font-size:13px;color:#d2e1e5;margin:21px 0 10px}.chart-label b{font-size:15px;color:#abedd7}.chart-label b.down{color:#ffb5af}
+.scale-track{height:14px;position:relative;background:linear-gradient(180deg,#0d3148,#061b2b);border:1px solid rgba(115,164,182,.34);border-radius:20px;box-shadow:inset 0 2px 6px rgba(0,0,0,.66),0 5px 12px rgba(0,0,0,.23)}
+.zero-line{position:absolute;left:50%;top:-6px;bottom:-6px;width:2px;background:#f1e7d2;z-index:2;box-shadow:0 0 9px rgba(252,233,197,.73)}
+.chart-fill{position:absolute;top:1px;bottom:1px;border-radius:12px;box-shadow:inset 0 1px 2px rgba(255,255,255,.6),0 0 12px rgba(163,227,206,.46)}
+.chart-positive{left:50%;width:47.3333%;background:linear-gradient(90deg,#72b9ac,#b3f2da)}
+.chart-negative{left:26.6667%;width:23.3333%;background:linear-gradient(90deg,#ffa6a4,#c77b80);box-shadow:inset 0 1px 2px #fff6,0 0 12px #f4a19b66}
+.chart-axis{margin-top:14px;font-size:10px;letter-spacing:.07em;color:#a5bac4}
+.magazine-caveat{display:flex;align-items:center;gap:30px;padding:28px 34px;border-radius:19px;background:radial-gradient(ellipse at 98% 0,rgba(218,170,84,.18),transparent 42%),linear-gradient(135deg,#123145,#091e30);border:1px solid rgba(248,203,129,.75);box-shadow:0 0 0 4px rgba(218,159,77,.045),0 23px 45px rgba(0,0,0,.25)}
+.caveat-emblem{flex:0 0 64px;width:64px;height:64px;border:1.5px solid #f2d196;color:#f2d196;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:40px;box-shadow:0 0 18px rgba(229,183,101,.13)}
+.magazine-caveat span{color:#f0c787;font-size:13px;font-weight:750;letter-spacing:.16em}
+.magazine-caveat p{margin:8px 0 0;color:#d5e1e6;font-size:15px;line-height:1.62}
+.feature-source{font-size:12px;letter-spacing:.02em;color:#91a9b8;padding-top:36px}
+/* Architectural-finance spread */
+.investment-feature{padding:104px 0 100px;background:radial-gradient(ellipse at 89% 7%,rgba(206,142,65,.14),transparent 44%),linear-gradient(165deg,#091e30 0%,#030d17 88%)!important}
+.investment-heading{display:grid;grid-template-columns:1fr 340px;align-items:end;gap:40px;margin:36px 0 49px}
+.investment-heading h2{font-size:clamp(52px,5.2vw,78px)}
+.investment-heading p{color:#c9d6dc;max-width:590px;font-size:18px}
+.investment-formula{padding:26px 28px;border-top:2px solid #ebbb79;background:linear-gradient(145deg,#102a3b,#071928);box-shadow:0 17px 34px #0005}
+.investment-formula span{display:block;font-size:11px;letter-spacing:.18em;color:#edc58b;margin-bottom:15px}
+.investment-formula strong{display:block;font:normal 25px Georgia,serif;color:#fcf2e1}
+.investment-formula small{display:block;color:#c2d0d5;margin-top:7px;line-height:1.6}
+.investment-stage{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.investment-step{position:relative;min-width:0;padding:33px 26px 31px;border-radius:14px;border:1px solid rgba(232,189,121,.44);background:radial-gradient(circle at 95% 0,rgba(190,148,89,.13),transparent 50%),linear-gradient(165deg,#113246,#061725);box-shadow:inset 0 1px 0 rgba(255,239,190,.16),0 18px 0 rgba(1,7,12,.35),0 30px 42px #0005}
+.investment-step.highlight{border-color:#eac78a;background:radial-gradient(circle at 88% 0,rgba(222,176,96,.25),transparent 52%),linear-gradient(165deg,#173b4d,#0a2335);transform:translateY(-11px)}
+.investment-step.caution{border-bottom-color:rgba(239,151,145,.8)}
+.scenario-index{font-size:11px;letter-spacing:.12em;color:#e8c692;font-weight:750}
+.investment-value{display:block;margin:27px 0 22px;color:#f8f1e7;font-size:clamp(44px,4.5vw,72px);letter-spacing:-.055em;line-height:1}
+.investment-step.highlight .investment-value{color:#f2d399;text-shadow:0 8px 25px rgba(222,181,109,.18)}
+.investment-step.caution .investment-value{color:#f5b0a9}
+.yield-bar{height:8px;background:#051423;border-radius:15px;border:1px solid rgba(160,197,206,.17);box-shadow:inset 0 2px 5px #000a;overflow:hidden}
+.yield-bar span{display:block;height:100%;border-radius:15px;background:linear-gradient(90deg,#9cafa7,#b6e4d5)}
+.investment-step.highlight .yield-bar span{background:linear-gradient(90deg,#c48e40,#f8d89a)}
+.investment-step.caution .yield-bar span{background:linear-gradient(90deg,#a26569,#e9aca7)}
+.investment-step dl{margin:29px 0 0}.investment-step dl div{display:flex;justify-content:space-between;gap:6px;border-top:1px solid rgba(211,187,144,.16);padding:10px 0}
+.investment-step dt{font-size:12px;color:#b8cbd4}.investment-step dd{margin:0;font-size:12px;color:#e9ecee;text-align:right;font-weight:700}
+.investment-bottom{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-top:68px}
+.investment-bottom blockquote{margin:0;font:normal clamp(23px,2.8vw,37px)/1.25 Georgia,serif;color:#faf1e0}
+.investment-bottom blockquote em{font-style:normal;color:#ecc486}
+.investment-bottom p{max-width:390px;color:#a9bec9;font-size:12px;line-height:1.55}
+/* Dossier: editorial ruled rows, no five repeated cards. */
+.dossier-feature{background:radial-gradient(ellipse at 1% 0,rgba(187,129,66,.12),transparent 43%),linear-gradient(135deg,#061624,#0a263a 60%,#04111d);padding:104px 0 92px}
+.dossier-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;margin:38px 0 37px;align-items:start}
+.dossier-intro{position:relative;padding:30px 0 30px;border-top:1px solid #ceac72}
+.folio-watermark{position:absolute;top:-18px;right:0;font:bold 150px Georgia,serif;color:rgba(211,168,106,.07);line-height:1;pointer-events:none}
+.dossier-intro h2{position:relative;font-size:clamp(48px,4.8vw,75px);line-height:1.08}
+.dossier-intro>p{font-size:18px;color:#c4d3d9;line-height:1.55;max-width:380px;margin:25px 0 52px}
+.dossier-verdict{padding:25px 27px;background:linear-gradient(130deg,#142f40,#0a1b29);border:1px solid rgba(230,191,126,.53);box-shadow:0 22px 38px #0004}
+.dossier-verdict span{display:block;color:#f4d092;font-size:11px;font-weight:700;letter-spacing:.17em;margin-bottom:12px}
+.dossier-verdict strong{font:normal 28px/1.25 Georgia,serif;color:#f8f1e4}
+.dossier-list{background:linear-gradient(145deg,#113044,#061927);border:1px solid rgba(220,180,115,.45);padding:18px 34px;border-radius:15px;box-shadow:0 29px 53px #0005}
+.dossier-list>div{display:grid;grid-template-columns:55px 1fr 22px;gap:20px;align-items:start;padding:22px 0;border-bottom:1px solid rgba(222,186,128,.26)}
+.dossier-list>div:last-child{border-bottom:0}
+.dossier-list b{font:normal 31px Georgia,serif;color:#e6bf81}
+.dossier-list h3{margin:1px 0 5px;color:#fff6e7;font-size:16px;font-family:Inter,system-ui,sans-serif;font-weight:750}
+.dossier-list p{margin:0;color:#b6cbd4;font-size:13px;line-height:1.5}
+.dossier-list>div>span{color:#cea569;font-size:19px}
+.dossier-footer{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.dossier-footer span{display:block;border-top:2px solid rgba(229,180,109,.7);padding:13px 0 7px;text-transform:uppercase;letter-spacing:.1em;font-size:11px;color:#e4d2b0}
+.folio-disclaimer{font-size:12px;color:#9aafb9;margin:13px 0 0}
+@media(max-width:900px){.feature-evidence{gap:13px}.evidence-tile{padding:24px;min-height:280px}.tile-number{font-size:clamp(62px,8vw,105px)}.magazine-lower{gap:27px}.investment-heading{grid-template-columns:1fr}.investment-stage{gap:10px}.investment-step{padding:24px 17px}.dossier-grid{gap:30px}}
+@media(max-width:700px){.magazine-feature{padding:68px 0}.magazine-chapter{font-size:10px;gap:8px;flex-wrap:wrap}.magazine-chapter>span:last-child{font-size:9px}.chapter-rule{min-width:20px}.magazine-head{margin:29px 0}.magazine-head h2{font-size:clamp(44px,10.7vw,68px)}.magazine-head>p{font-size:17px}.feature-evidence{grid-template-columns:1fr;gap:23px}.evidence-tile{min-height:255px;padding:23px 26px}.tile-number{font-size:clamp(70px,15vw,110px)}.magazine-lower{grid-template-columns:1fr;margin:67px 0 30px}.magazine-caveat{align-items:start;gap:17px;padding:21px}.caveat-emblem{flex-basis:44px;width:44px;height:44px;font-size:27px}.diverging-chart{padding:21px 20px}.investment-feature,.dossier-feature{padding:65px 0}.investment-heading h2,.dossier-intro h2{font-size:clamp(43px,10vw,62px)}.investment-stage{grid-template-columns:1fr;gap:31px}.investment-step.highlight{transform:none}.investment-step{padding:28px}.investment-value{font-size:63px}.investment-bottom{display:block;margin-top:57px}.investment-bottom p{margin-top:23px}.dossier-grid{grid-template-columns:1fr;gap:20px}.dossier-intro>p{margin-bottom:25px}.dossier-list{padding:10px 21px}.dossier-list>div{grid-template-columns:36px 1fr 13px;gap:12px}.dossier-list b{font-size:24px}.dossier-footer{grid-template-columns:1fr;gap:1px}}
+@media(prefers-reduced-motion:reduce){.evidence-tile,.investment-step{transition:none}}
+
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Dubai's Buyer Opportunity: Real or Illusion?", "datePublished": "2026-10-27", "inLanguage": "en", "publisher": {"@type": "Organization", "name": "Dubai Property Intelligence", "url": "https://dpi-os.com"}, "mainEntityOfPage": "https://dpi-os.com/issue-004.html"}</script>
 </head>
@@ -102,10 +203,82 @@ body{background:#030d16;color:var(--cream)}
 <section class="hero" aria-labelledby="hero-title"><div class="container hero-grid"><div class="hero-content"><div class="eyebrow">Volume 1 &nbsp; / &nbsp; Issue 004 &nbsp; / &nbsp; 27 October 2026</div><div class="rule"></div><h1 id="hero-title">Dubai's Buyer Opportunity:<br><span class="gradient">Real or Illusion?</span></h1><p class="hero-deck">Sales are slowing. But are buyers actually getting better deals?</p><div class="hero-buttons"><a class="button primary" href="https://dpi-os.com/download/issue-004.pdf" target="_blank" rel="noopener">Read the luxury magazine <span aria-hidden="true">↗</span></a><a class="button secondary" href="#evidence">Explore the evidence <span aria-hidden="true">↓</span></a></div><div class="hero-note">10-page publication · Free research · Independent analysis</div></div><aside class="cover-wrap" aria-label="Issue 004 magazine cover"><i class="book-spine" aria-hidden="true"></i><img class="book-cover" src="https://dpi-os.com/13-assets/issue-004-cover.png" alt="Dubai Property Intelligence Issue 004 premium magazine cover, Dubai's Buyer Opportunity: Real or Illusion?" loading="eager"><div class="cover-caption">THE OCTOBER INTELLIGENCE EDITION</div></aside></div></section>
 <section class="brief-section" id="evidence"><div class="container"><div class="section-heading"><div><div class="eyebrow">02 / The 60-second intelligence brief</div><h2>What changed. <span class="gradient">What didn't.</span></h2></div><p>Three signals that explain why headline market statistics aren't enough to identify genuine opportunities.</p></div><div class="brief-grid"><article class="glass signal"><span class="label">Savills · Q3 2026</span><strong>~34,500</strong><p>Residential transactions, <b>down 4%</b> quarter-on-quarter.</p><small>Transaction activity · Not a price index</small></article><article class="glass signal"><span class="label">ValuStrat · September 2026</span><strong class="rose">−4.5%</strong><p>Year-on-year change in the residential value index; <b>−0.1%</b> month-on-month.</p><small>Valuation index · Not an individual discount</small></article><article class="glass signal"><span class="label">DPI buyer reality</span><strong class="mint">Evidence</strong><p>Comparable registered sales, achievable rent, total costs and a clear exit strategy.</p><small>Unit-level verification is essential</small></article></div><div class="insight-banner"><div class="number">“</div><p>A slower market creates more questions. <em>Not automatic bargains.</em></p></div></div></section>
 <section class="editorial" id="s1"><div class="container split"><div><div class="eyebrow">03 / Market reality</div><h2 class="section-title">Fewer sales.<br><span class="gradient">A more selective market.</span></h2><p class="lede">Two independent indicators point toward moderation, but they measure different things and use different methodologies.</p><p class="interpretation">A transaction count tells us how active the market is. An index attempts to estimate how values have moved. Neither determines a specific apartment's fair purchase price.</p><a class="link-arrow" href="#s2">See why that distinction matters →</a></div><div class="metric-two"><article class="glass metric-panel"><div class="eyebrow">Activity</div><div class="big">−4%</div><div class="minibar"><span style="width:45%"></span></div><p>Q3 residential registrations versus Q2<br><b>~34,500 transactions</b></p><small class="muted">Savills · Q3 2026</small></article><article class="glass metric-panel"><div class="eyebrow">Values</div><div class="big" style="color:var(--rose)">−4.5%</div><div class="minibar"><span style="width:48%;background:var(--rose)"></span></div><p>Residential valuation index year-on-year<br><b>−0.1% month-on-month</b></p><small class="muted">ValuStrat · Sep 2026</small></article></div></div></section>
-<section class="editorial muted-paper" id="s2"><div class="container split"><div class="split-copy"><div class="eyebrow">04 / The headline illusion</div><h2 class="section-title">One area.<br>Two very different stories.</h2><p class="lede">Al Furjan demonstrates why the type of transaction matters more than the headline alone.</p><p>In a historical data snapshot dated 19 October 2026, the same provider reported a positive median change for all registered built-home sales and a negative median change for ready resale only.</p><p>These are <b>different transaction populations</b>. Neither is a matched-unit price index or proof of a discount on an individual home.</p><div class="mini-tag">Source snapshot · 19 October 2026</div></div><div><div class="comparison"><div class="row"><div><span class="pill">All built-residential registrations</span><p>Includes off-plan sales</p></div><b style="color:var(--mint)">+14.2%</b></div><div class="row"><div><span class="pill">Ready resale only</span><p>Excludes off-plan registrations</p></div><b style="color:var(--rose)">−7.0%</b></div></div><div class="notes">The frozen September ready-resale report showed <b>−5.4%</b> for Al Furjan. That is a different dated snapshot. Do not mix these measurements as if they were taken at the same time.</div></div></div></section>
+<section class="editorial magazine-feature" id="s2" aria-labelledby="furjan-title">
+  <div class="container">
+    <div class="magazine-chapter"><span>04 / THE HEADLINE ILLUSION</span><span class="chapter-rule" aria-hidden="true"></span><span>AL FURJAN · 19 OCT 2026</span></div>
+    <div class="magazine-head">
+      <h2 id="furjan-title">One area.<br><em>Two very different stories.</em></h2>
+      <p>Al Furjan demonstrates why the <strong>denominator matters.</strong><br><span>Two market signals. Two transaction populations.</span></p>
+    </div>
+    <div class="feature-evidence">
+      <article class="evidence-tile positive">
+        <div class="tile-top"><span>01 / ALL BUILT-RESIDENTIAL SALES</span><span class="tile-glyph" aria-hidden="true">↗</span></div>
+        <div class="tile-number">+14.2<span>%</span></div>
+        <p>Annual change in area median AED per sq ft · includes off-plan registrations.</p>
+        <div class="tile-foot">ALL REGISTERED SALES / NOT A MATCHED-HOME INDEX</div>
+      </article>
+      <article class="evidence-tile negative">
+        <div class="tile-top"><span>02 / READY RESALE ONLY</span><span class="tile-glyph" aria-hidden="true">↘</span></div>
+        <div class="tile-number">−7.0<span>%</span></div>
+        <p>Annual change in ready-resale median AED per sq ft · excludes off-plan registrations.</p>
+        <div class="tile-foot">EXISTING HOME RESALES / DIFFERENT SAMPLE</div>
+      </article>
+    </div>
+    <div class="magazine-lower">
+      <div class="evidence-explain">
+        <span class="evidence-kicker">WHAT IS MEASURED?</span>
+        <h3>One headline can hide <em>two different markets.</em></h3>
+        <p>The first figure combines registered built-home sales, including off-plan. The second isolates ready resale. Comparing them as if they were identical would mislead buyers.</p>
+      </div>
+      <div class="diverging-chart" role="img" aria-label="Common scale from minus 15 to plus 15 percent. All built residential sales plus 14.2 percent. Ready resale only minus 7.0 percent.">
+        <div class="chart-heading"><span>MEDIAN AED / SQ FT · YoY</span><span>COMMON ±15% SCALE</span></div>
+        <div class="chart-label">All built-home sales <b>+14.2%</b></div>
+        <div class="scale-track"><i class="zero-line"></i><i class="chart-fill chart-positive"></i></div>
+        <div class="chart-label">Ready resale only <b class="down">−7.0%</b></div>
+        <div class="scale-track"><i class="zero-line"></i><i class="chart-fill chart-negative"></i></div>
+        <div class="chart-axis"><span>−15%</span><span>0</span><span>+15%</span></div>
+      </div>
+    </div>
+    <aside class="magazine-caveat">
+      <div class="caveat-emblem" aria-hidden="true">!</div>
+      <div><span>THE IMPORTANT CAVEAT</span><p>The frozen September report recorded Al Furjan ready-resale change of <strong>−5.4%</strong>; the newer historical 19 October snapshot shows <strong>−7.0%</strong>. They are <strong>different dated extracts</strong>, not a silent revision. Neither number values a particular home.</p></div>
+    </aside>
+    <div class="feature-source">Source: Dubai Real Estate Data market boards · Historical snapshot 19 October 2026</div>
+  </div>
+</section>
 <section class="editorial" id="s3"><div class="container"><div class="section-heading"><div><div class="eyebrow">05 / Community research watch</div><h2>Where might buyers <span class="gradient">look closer?</span></h2></div><p>Research screens, not recommendations. All three figures use the same frozen September ready-resale methodology.</p></div><div class="communities"><article class="glass community"><span>Research screen 01</span><h3>Dubai Science Park</h3><div class="psf">AED 1,375 <small>/ sq ft</small></div><div class="change">−9.7%</div><small>Year-on-year area median change</small></article><article class="glass community"><span>Research screen 02</span><h3>Al Furjan</h3><div class="psf">AED 1,144 <small>/ sq ft</small></div><div class="change">−5.4%</div><small>Year-on-year area median change</small></article><article class="glass community"><span>Research screen 03</span><h3>Al Kifaf</h3><div class="psf">AED 1,947 <small>/ sq ft</small></div><div class="change">−5.3%</div><small>Year-on-year area median change</small></article></div><p class="scope">12 months ending 30 September 2026 versus the preceding 12 months · At least 50 ready sales per area in each period. Area medians can shift with unit mix and do not determine an individual home's value.</p></div></section>
-<section class="editorial" id="s4" style="background:linear-gradient(170deg,#0b2738,#061725)"><div class="container yield-layout"><div><div class="eyebrow">06 / The discount test</div><h2 class="section-title">5% off.<br><span class="gradient">A better deal?</span></h2><p class="lede">A discounted purchase price improves net yield only when the projected rental income holds up.</p><div class="calc">Net operating yield = (annual collected rent − annual operating costs) ÷ purchase price</div><div class="quote">“A discount is one number. Investment quality is the whole equation.”</div><p class="footnote">Illustrative figures only. All yields are before financing, acquisition costs and any applicable taxes.</p></div><div class="yield-list"><article class="yield"><div><span class="category">Original assumptions</span><p>AED 1,000,000 · Rent 80,000 · Costs 15,000</p></div><strong>6.50%</strong></article><article class="yield"><div><span class="category">Purchase price reduced by 5%</span><p>AED 950,000 · Rent 80,000 · Costs 15,000</p></div><strong>6.84%</strong></article><article class="yield warn"><div><span class="category">Same discount, rent 10% lower</span><p>AED 950,000 · Rent 72,000 · Costs 15,000</p></div><strong>6.00%</strong></article></div></div></section>
-<section class="editorial muted-paper" id="s5"><div class="container"><div class="eyebrow">07 / The buyer opportunity test</div><h2 class="section-title">Five questions before you buy.</h2><p class="lede">A promising asking-price reduction is not the same as a defensible purchase.</p><div class="checks"><article class="check"><div class="num">01</div><h3>What actually sold?</h3><p>Recent registered sales of closely comparable properties.</p></article><article class="check"><div class="num">02</div><h3>What will it earn?</h3><p>Achievable rent, vacancy and operating expenses.</p></article><article class="check"><div class="num">03</div><h3>What's the full cost?</h3><p>Purchase price, fees, finance and fit-out.</p></article><article class="check"><div class="num">04</div><h3>What could go wrong?</h3><p>Building, supply, legal and delivery risks.</p></article><article class="check"><div class="num">05</div><h3>Who buys it later?</h3><p>Resale demand, liquidity and realistic exit options.</p></article></div><div class="test-footer"><div>Evidence-backed opportunity</div><div>Worth further investigation</div><div>Illusion of opportunity</div></div><p class="footnote" style="color:#b7c7d0">These are editorial screening outcomes, not DPI property ratings or personalized advice.</p></div></section>
+<section class="editorial investment-feature" id="s4" aria-labelledby="discount-title">
+  <div class="container">
+    <div class="magazine-chapter"><span>06 / THE DISCOUNT TEST</span><span class="chapter-rule" aria-hidden="true"></span><span>A WORKED INVESTMENT EXAMPLE</span></div>
+    <div class="investment-heading">
+      <div><h2 id="discount-title">A lower price.<br><em>A weaker deal?</em></h2><p>A 5% discount improves the math only if your rental income assumptions hold.</p></div>
+      <div class="investment-formula"><span>THE EQUATION</span><strong>Net operating yield</strong><small>(annual rent − operating costs) ÷ purchase price</small></div>
+    </div>
+    <div class="investment-stage">
+      <article class="investment-step"><span class="scenario-index">01 / ORIGINAL ASSUMPTIONS</span><strong class="investment-value">6.50%</strong><div class="yield-bar"><span style="width:81.25%"></span></div><dl><div><dt>Purchase</dt><dd>AED 1,000,000</dd></div><div><dt>Annual rent</dt><dd>AED 80,000</dd></div><div><dt>Operating costs</dt><dd>AED 15,000</dd></div></dl></article>
+      <article class="investment-step highlight"><span class="scenario-index">02 / 5% PURCHASE DISCOUNT</span><strong class="investment-value">6.84%</strong><div class="yield-bar"><span style="width:85.5%"></span></div><dl><div><dt>Purchase</dt><dd>AED 950,000</dd></div><div><dt>Annual rent</dt><dd>AED 80,000</dd></div><div><dt>Operating costs</dt><dd>AED 15,000</dd></div></dl></article>
+      <article class="investment-step caution"><span class="scenario-index">03 / SAME DISCOUNT, LOWER RENT</span><strong class="investment-value">6.00%</strong><div class="yield-bar"><span style="width:75%"></span></div><dl><div><dt>Purchase</dt><dd>AED 950,000</dd></div><div><dt>Annual rent</dt><dd>AED 72,000</dd></div><div><dt>Operating costs</dt><dd>AED 15,000</dd></div></dl></article>
+    </div>
+    <div class="investment-bottom"><blockquote>A discount is one number.<br><em>Investment quality is the whole equation.</em></blockquote><p>Hypothetical net operating yields before financing, acquisition costs and any applicable taxes. Chart bars share a 0–8% scale.</p></div>
+  </div>
+</section>
+<section class="editorial dossier-feature" id="s5" aria-labelledby="dossier-title">
+  <div class="container">
+    <div class="magazine-chapter"><span>07 / THE BUYER OPPORTUNITY TEST</span><span class="chapter-rule" aria-hidden="true"></span><span>YOUR PRIVATE BUYER'S DOSSIER</span></div>
+    <div class="dossier-grid">
+      <div class="dossier-intro"><div class="folio-watermark" aria-hidden="true">05</div><h2 id="dossier-title">Five questions<br><em>before you buy.</em></h2><p>A convincing asking-price reduction is not the same as a defensible purchase.</p><div class="dossier-verdict"><span>THE DECISION RULE</span><strong>Buy the evidence.<br>Not the headline.</strong></div></div>
+      <div class="dossier-list" role="list">
+        <div role="listitem"><b>01</b><div><h3>What actually sold?</h3><p>Recent registered sales of closely comparable homes.</p></div><span aria-hidden="true">↗</span></div>
+        <div role="listitem"><b>02</b><div><h3>What will it earn?</h3><p>Achievable rent, vacancy and operating expenses.</p></div><span aria-hidden="true">↗</span></div>
+        <div role="listitem"><b>03</b><div><h3>What's the full cost?</h3><p>Purchase price, fees, finance and fit-out.</p></div><span aria-hidden="true">↗</span></div>
+        <div role="listitem"><b>04</b><div><h3>What could go wrong?</h3><p>Building, supply, legal and delivery risks.</p></div><span aria-hidden="true">↗</span></div>
+        <div role="listitem"><b>05</b><div><h3>Who buys it later?</h3><p>Resale demand, liquidity and realistic exit options.</p></div><span aria-hidden="true">↗</span></div>
+      </div>
+    </div>
+    <div class="dossier-footer"><span>Evidence-backed opportunity</span><span>Further investigation</span><span>Illusion of opportunity</span></div>
+    <p class="folio-disclaimer">Editorial screening outcomes, not DPI property ratings or personalized financial advice.</p>
+  </div>
+</section>
 <section class="future" id="s6"><div class="container future-grid"><div><div class="eyebrow">08 / The future supply question</div><h2 class="section-title">The pipeline matters.<br><span class="gradient">But where?</span></h2><p class="lede">Local delivery timing, unit mix, competing stock and rental demand shape pressure more than a citywide pipeline alone.</p><a class="link-arrow" href="https://dpi-os.com/download/issue-004.pdf">Explore this in the complete magazine →</a></div><div class="glass metric-panel"><div class="eyebrow">Scheduled residential pipeline</div><div class="supply-number">&gt;525,000</div><div class="supply-label">Homes scheduled for 2027–2030</div><div class="yearline"><span>2027</span><span>2028</span><span>2029</span><span>2030</span></div><div class="supply-caveat">Scheduled supply is <strong>not</strong> confirmed completed supply. <small>Source: Savills Q3 2026.</small></div></div></div></section>
 <section class="close"><div class="container"><div class="eyebrow">DPI · The conclusion</div><h2>Buy the evidence.<br><span class="gradient">Not the headline.</span></h2><p>The real opportunity is the property that makes sense on comparable sales, sustainable income, total costs and a realistic exit—not just a convincing discount.</p><a class="button primary" href="https://dpi-os.com/download/issue-004.pdf">Open the complete 10-page edition ↗</a><a class="button secondary" href="https://dpi-os.com/">Return to DPI home</a><div style="margin-top:42px;color:var(--gold);font-family:Georgia,serif;font-size:18px;letter-spacing:.08em">Know Today. Invest Better. Build Tomorrow.</div></div></section>
 <section class="source-section" id="sources"><div class="container source-grid"><div><div class="eyebrow">Sources + method</div><h2>Evidence you can check.</h2><p>Independent educational analysis—not personalized investment, financial, legal or tax advice. DPI has not independently reproduced provider indices or verified any particular property as a bargain.</p></div><div><ol><li><a href="https://www.savills.com/research_articles/255800/395342-0">Savills — Dubai Residential Market, Q3 2026</a></li><li><a href="https://valustrat.com/products/dubai-vpi-residential-values-september-2026">ValuStrat — September 2026 Residential Value Index</a></li><li><a href="https://www.dubairealestatedata.com/report/2026-09">Dubai Real Estate Data — Frozen September 2026 edition</a></li><li><a href="https://www.dubairealestatedata.com/market">Dubai Real Estate Data — Live board (19 October historical snapshot discussed)</a></li><li><a href="https://www.dubairealestatedata.com/methodology">Dubai Real Estate Data — Methodology</a></li><li><a href="https://dubailand.gov.ae/en/open-data/real-estate-data/">Dubai Land Department — Real Estate Data</a></li></ol><p>Market figures reflect the specific provider, population and reference period stated. Later updates may differ. The PDF remains the primary full visual publication; this page is the web-reading edition.</p></div></div></section>
