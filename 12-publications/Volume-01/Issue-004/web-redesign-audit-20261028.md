@@ -52,3 +52,15 @@ Screenshots from Safari show Issue 004 reading like a plain article: one dark he
 - Locally rendered Chromium desktop 1440px and mobile 390px. No horizontal overflow; both key redesigned sections visually inspected.
 - English redesign and homepage feature remain on **design/issue-004-premium-web-20261028**, not deployed. Public homepage and localized pages are unchanged pending publisher sign-off.
 - A Safari review on the actual staging/live site remains necessary before calling browser QA complete.
+
+## Editorial composition upgrade — 28 Oct 2026 late evening
+- Reference: approved Issue 004 **actual printed Page 04** with architectural atmosphere, separate +14.2% and −7.0% illuminated data panels, a common-zero comparison, and the dated historical caveat.
+- Replaced the former two-row Al Furjan statistics box with **two independent beveled editorial feature panels** and large dimensional numerals. Added an accessible **common ±15% scale**: +14.2% bar from 0 to +14.2; −7.0% bar from −7.0 to 0. No axis or figure distortion.
+- Added a cinematic section backdrop using existing skyline asset; did not upload or invent property imagery.
+- Replaced old yield-list layout with three distinct 6.50% / 6.84% / 6.00% purchase scenarios, clearly labeled assumptions and an accurate shared 0–8% scale.
+- Replaced five identical buyer cards with a styled editorial **buyer dossier** featuring five evidence checks and caveat.
+- Disabled sticky navigation on the reading page: the previous sticky header obscured article headings when readers scrolled between long feature sections.
+- Local Chromium component renders were inspected for desktop and mobile (1440px, 390px), with no horizontal overflow. These were local equivalent previews; full **staged GitHub page** browser deployment and Safari QA remain pending.
+- In the staged source: duplicate id count 0; unresolved internal anchors 0; editorial components present.
+- Direct main branch comparison confirms **main unchanged**: staged blob ffaf2aa8cd00d2fa33bb10f004feb56f867b5c7b, main blob 36e43973e4538e7536823c44980f6b4b2b8f5f47.
+- Publisher to review redesigned compositions before approving a live deployment. No change to the approved PDF, publications archive, or multilingual Issue 004 HTML yet.
