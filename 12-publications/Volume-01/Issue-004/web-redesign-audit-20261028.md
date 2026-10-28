@@ -40,3 +40,15 @@ Screenshots from Safari show Issue 004 reading like a plain article: one dark he
 - >525,000 homes are scheduled for 2027–2030, not certified completions.
 
 **Do not merge into live `main` until visual review and deployment QA.**
+
+
+## Color consistency revision — 28 October 2026 evening
+- Review screenshot identified a premium-style inconsistency: ivory Al Furjan section against the navy site.
+- Unified **all English Issue 004 sections** under DPI color tokens: midnight navy #071624, champagne gold #D9B46D, ivory text #F6F2E9. Teal and coral reserved for positive/negative numeric signals.
+- Replaced both ivory backgrounds (Al Furjan comparison and five-question checklist) and white cards with dark, dimensionally lit panels.
+- Fixed dark labels, annotations, caveats, note surfaces and editorial text contrast.
+- Set mobile site navigation non-sticky to avoid overlapping long article sections when reading.
+- Aligned web section labels with the approved PDF page numbers (02–08; notably **04 / The Headline Illusion**).
+- Locally rendered Chromium desktop 1440px and mobile 390px. No horizontal overflow; both key redesigned sections visually inspected.
+- English redesign and homepage feature remain on **design/issue-004-premium-web-20261028**, not deployed. Public homepage and localized pages are unchanged pending publisher sign-off.
+- A Safari review on the actual staging/live site remains necessary before calling browser QA complete.
