@@ -1,7 +1,7 @@
 # DPI Issue 005 — First integrated evidence checkpoint
 **Date:** 22 November 2026 · **Status:** internal research, NOT approved for publication
 **Working title:** *Dubai 2027: The Demand Test*
-**Release target:** 3 December 2026, conditional on editorial, methodological and publisher approval.
+**Release target:** Thursday 26 November 2026, 08:30 GST, restored by founder on 22 November; conditional on source/methodology QA and explicit publisher sign-off.
 **Source inventory:** DLD transaction ZIP snapshot 20 Nov 2026; 11 DLD rental CSV ZIP parts snapshot 20 Nov 2026; DLD project CSV 1 Nov 2026. Source folder: https://drive.google.com/drive/folders/147TFtHg_fRMidY8PPRogqBspndC66v4C
 
 ## Validation result
