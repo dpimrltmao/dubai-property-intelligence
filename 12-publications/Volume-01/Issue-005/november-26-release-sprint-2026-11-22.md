@@ -12,7 +12,7 @@ A 10-page PDF founder proof was generated and locally rendered/checked, labeled 
 5. Madinat Al Mataar (DLD area 462): 4,182 -> 3,283 New rental starts (-21.5%); New 1BR median AED58k -> 57k; Existing/Sell apartment transactions 664 -> 584; Existing/Sell median AED/ft2 1005.5 -> 1085.8; 22 active projects end-dated 2027.
 6. Wadi Al Safa 5 (area 467): rental starts 4,105 -> 4,255 (+3.7%); 1BR AED55k -> 55k; Existing/Sell 864 -> 415; median AED/ft2 829.5 -> 823.2; 32 projects end-dated 2027.
 7. Al Barsha South Fourth (area 441): rental starts 14,703 -> 15,513 (+5.5%); 1BR AED73k -> 70k; Existing/Sell 3,965 -> 2,932; median AED/ft2 1245.6 -> 1254.9; 31 projects end-dated 2027.
-8. Building-level 1BR rental sensitivity test for area 441: select new one-bedroom apartment contracts with floor area 35-125 sqm, matched exact recorded building name, >=10 eligible contracts in each Jan-Oct year. **127 buildings** match, with **108** lower median in 2026, 11 unchanged and 8 higher. Important: similar building names and wide size bands are not same-unit matches; no causal inference.
+8. Building-level 1BR rental sensitivity test for area 441: select new one-bedroom apartment contracts with floor area 35-125 sqm, matched exact recorded building name, >=10 eligible contracts in each Jan-Oct year. **127 distinct project-name groups** match, with **108** lower median in 2026, 11 unchanged and 8 higher. The actual field is `project_name_en` (not verified `building_name`): one source project can contain multiple buildings. Neither project-name continuity nor the 35–125 sq m screen constitutes same-building or same-unit comparables. No price-index or causal inference.
 9. Buyer/landlord decisions: scenario definitions without made-up forecast probabilities; vacancy, financing, service charges and comparable future units.
 10. Source dates, filters and limitations.
 
@@ -34,3 +34,9 @@ A 10-page PDF founder proof was generated and locally rendered/checked, labeled 
 
 ## Release gate
 Founder approves final English PDF and web assets, visible source/date/methodology notes and every market claim. If multilingual editions are incomplete, they must be clearly labeled as pending, not represented as published. Main branch and live DPI sites remain unchanged until separate authorization.
+
+## 22 November founder review artifacts — v2
+- A revised 10-page English proof corrected the `project_name_en` cohort definition and amended area headlines to avoid overclaiming.
+- A standalone responsive English web-reading proof was created and rendered in desktop Chromium at 1440px and mobile at 390px without horizontal overflow, with a local PDF link and explicit `noindex` staging metadata. The web reader is a local founder-review bundle only, not a public GitHub/Pages asset.
+- Core numbers in the three featured areas were rechecked against the filtered read-only research SQLite database; project-name groups were recomputed: 127 groups, 108 lower, 11 unchanged, 8 higher.
+- QA remaining: founder final review, Safari/production-like site integration, multilingual edition translations/QA, final source wording check and explicit approval for publishing.
