@@ -40,3 +40,14 @@ Founder approves final English PDF and web assets, visible source/date/methodolo
 - A standalone responsive English web-reading proof was created and rendered in desktop Chromium at 1440px and mobile at 390px without horizontal overflow, with a local PDF link and explicit `noindex` staging metadata. The web reader is a local founder-review bundle only, not a public GitHub/Pages asset.
 - Core numbers in the three featured areas were rechecked against the filtered read-only research SQLite database; project-name groups were recomputed: 127 groups, 108 lower, 11 unchanged, 8 higher.
 - QA remaining: founder final review, Safari/production-like site integration, multilingual edition translations/QA, final source wording check and explicit approval for publishing.
+
+## 22 November editorial clarification — founder-directed v3
+The founder asked whether the issue implied that demand existed only in Al Barsha South. **No.** Editorial framing must state that three DLD areas are *selected contrasting case studies*, not Dubai's only demand centres, area winners/losers, a representative coverage of Dubai, or investment recommendations.
+
+**New unpublished sources in this branch:**
+- `staging/issue-005-english-manuscript-v3.md` — full revised ten-page English editorial source with cover, opening clarification, source tables, individual area dossiers, project-name caveat, investor framework and methodology.
+- `staging/issue-005-editorial-v3.html` — revised responsive HTML staging source based on the actual v2 founder HTML; adds above-the-fold editor's clarification, three-lens explainer and explicit 'not a ranking' statement. Retains `noindex,nofollow,noarchive` and removes the broken PDF link pending regenerated PDF.
+
+**What v3 means editorially:** New rental contract starts are *activity*, not new households or occupancy. One-bedroom rent medians are *observed pricing*, not a mix-adjusted rent index. Project end dates are *targets*, not verified completions. Some local measures diverge without proving net absorption or citywide oversupply. Keep "Al Barsha South Fourth" explicitly as DLD area 441 (not all Al Barsha).
+
+**Proof status:** The v2 PDF remains an earlier founder proof, **not** the final v3 PDF. A fresh v3 PDF typesetting and visual QA remains outstanding; no claim of completed translation or Safari visual test is made for v3 HTML. Explicit founder approval required before deployment. **26 November 2026 08:30 GST remains the publication target.**
