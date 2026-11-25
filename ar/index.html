@@ -100,12 +100,12 @@
 
   <meta
     property="og:image"
-    content="https://dpi-os.com/13-assets/issue-004-social-preview.jpg"
+    content="https://dpi-os.com/13-assets/issue-005-social-preview.jpg"
   >
 
   <meta
     property="og:image:alt"
-    content="DPI Issue 003 — Dubai Is Cooling, But Unevenly"
+    content="DPI Issue 005 — Dubai 2027: The Demand Test (English edition)"
   >
 
 
@@ -129,7 +129,7 @@
 
   <meta
     name="twitter:image"
-    content="https://dpi-os.com/13-assets/issue-004-social-preview.jpg"
+    content="https://dpi-os.com/13-assets/issue-005-social-preview.jpg"
   >
 
   <link
@@ -167,6 +167,31 @@
 <!-- DPI optional analytics: GA4 + Metricool only after consent -->
 <link rel="stylesheet" href="/13-assets/dpi-analytics-consent.css?v=20261102">
 <script defer src="/13-assets/dpi-analytics-consent.js?v=20261102"></script>
+
+<style id="dpi-issue005-localized-homepage">
+/* Issue 005 — same approved cover on localized homepages, no distortion. */
+.hero-card.dpi-local-issue005-card{
+  display:flex;flex-direction:column;align-items:center;gap:14px;
+  min-width:0;text-decoration:none;color:var(--text);
+  background:radial-gradient(ellipse at 50% 15%,rgba(216,178,117,.13),transparent 60%),linear-gradient(145deg,#121b23,#0d141a);
+}
+.dpi-local-issue005-card .hero-card-top{width:100%;gap:16px;flex-wrap:wrap}
+.dpi-local-issue005-card img{
+  display:block;width:min(100%,310px);height:auto;
+  aspect-ratio:1122 / 1402;object-fit:contain;margin:3px auto;
+  border:1px solid rgba(229,188,118,.3);box-shadow:12px 17px 30px rgba(0,0,0,.37);
+}
+.dpi-local-issue005-title{font-size:1.3rem;line-height:1.35;text-align:center;margin:0;color:var(--text);font-weight:700}
+.dpi-local-issue005-action{font-size:.78rem;color:var(--gold);font-weight:700}
+.dpi-local-issue005-card:hover,.dpi-local-issue005-card:focus-visible{border-color:var(--gold)}
+.issue-cover-card img[src="/13-assets/issue-005-cover.png"]{
+  display:block;width:100%;max-width:420px;height:auto;
+  aspect-ratio:1122 / 1402;object-fit:contain;
+}
+.dpi-issue005-language-note{font-size:.85rem;color:var(--muted)}
+@media(max-width:850px){.dpi-local-issue005-card img{max-width:290px}}
+@media(max-width:500px){.dpi-local-issue005-card img{max-width:260px}}
+</style>
 </head>
 
 
@@ -287,20 +312,15 @@
       <p class="eyebrow">ذكاء مستقل لسوق دبي العقاري</p>
       <h1>اعرف اليوم.<br><span>استثمر بذكاء.</span><br>ابنِ الغد.</h1>
       <p class="hero-copy">تحوّل DPI بيانات السوق الموثوقة إلى سياق ورؤية ودعم عملي للقرارات العقارية.</p>
-      <div class="button-row"><a class="btn btn-primary" href="/ar/issue-004.html">قراءة العدد 004</a><a class="btn btn-secondary" href="#analytics">استكشف التحليل</a></div>
-      <p class="micro">المجلد 1 • العدد 004 • 27 أكتوبر 2026</p>
+      <div class="button-row"><a class="btn btn-primary" href="/issue-005.html" hreflang="en">قراءة العدد 005 بالإنجليزية</a><a class="btn btn-secondary" href="#analytics">استكشف التحليل</a></div>
+      <p class="micro">المجلد 1 • العدد 005 • نوفمبر 2026 · النسخة الكاملة بالإنجليزية</p>
     </div>
-    <div class="hero-card">
-    <div class="hero-card-top"><span>DPI ISSUE 004</span><span>VOL. 1 • ISSUE 004</span></div>
-    <div class="divider"></div><p class="hero-card-kicker">DUBAI PROPERTY INTELLIGENCE</p>
-    <h2>فرصة المشتري في دبي: حقيقة أم وهم؟</h2><p>المبيعات تتباطأ، ولكن هل يحصل المشترون فعلاً على صفقات أفضل؟</p>
-    <div class="signal-grid">
-      <div><span class="signal">SAVILLS Q3 2026</span><strong>~34,500</strong></div>
-      <div><span class="signal">SALES QOQ</span><strong>−4%</strong></div>
-      <div><span class="signal">VALUSTRAT SEP 2026 YOY</span><strong>−4.5%</strong></div>
-      <div><span class="signal">DPI FOCUS</span><strong>Evidence before discounts</strong></div>
-    </div>
-  </div>
+    <a class="hero-card dpi-local-issue005-card" href="/issue-005.html" hreflang="en" aria-label="فتح العدد 005 باللغة الإنجليزية">
+      <div class="hero-card-top"><span>DPI ISSUE 005</span><span>ENGLISH EDITION</span></div>
+      <img src="/13-assets/issue-005-cover.png" width="1122" height="1402" loading="eager" alt="غلاف DPI العدد 005 — دبي 2027: اختبار الطلب">
+      <h2 class="dpi-local-issue005-title">دبي 2027: اختبار الطلب</h2>
+      <span class="dpi-local-issue005-action">استكشف العدد 005 بالإنجليزية</span>
+    </a>
   </div>
 </section>
 
@@ -736,15 +756,16 @@
   <section class="section section-alt" id="latest">
   <div class="container latest-grid">
     <div>
-      <p class="eyebrow">أحدث التحليلات</p>
-      <h2 class="section-title">فرصة المشتري في دبي: حقيقة أم وهم؟</h2>
-      <p class="issue-meta">المجلد 1 • العدد 004 • أكتوبر 2026</p>
-      <div class="date-box"><div><span>العدد</span><strong>004</strong></div><div><span>تاريخ النشر</span><strong>27 أكتوبر 2026</strong></div></div>
-      <p>تباطؤ السوق لا يعني أن كل عقار أصبح فرصة جيدة. يتناول العدد 004 نشاط المعاملات وأسعار المناطق وعائد الاستثمار الفعلي بعد التكاليف.</p>
-      <div class="button-row"><a class="btn btn-primary" href="/ar/issue-004.html">فتح العدد 004</a><a class="btn btn-secondary" href="/ar/issue-003.html">قراءة العدد 003</a><a class="btn btn-secondary" href="/download/issue-004.pdf">تحميل المجلة</a></div>
+      <p class="eyebrow">أحدث التحليلات · العدد 005</p>
+      <h2 class="section-title">دبي 2027: اختبار الطلب</h2>
+      <p class="issue-meta">المجلد 1 • العدد 005 • نوفمبر 2026</p>
+      <div class="date-box"><div><span>العدد</span><strong>005</strong></div><div><span>الإصدار</span><strong>نوفمبر 2026</strong></div></div>
+      <p>تُظهر بيانات المشاريع 362 سجلاً لمشاريع نشطة تستهدف الانتهاء في عام 2027، لكن الموعد المستهدف لا يعني التسليم الفعلي. يقارن العدد 005 بين نشاط الإيجارات والأسعار وثلاث مناطق في دبي لفهم الطلب بعيداً عن العناوين العامة.</p>
+      <p class="dpi-issue005-language-note">العدد الكامل متاح حالياً باللغة الإنجليزية.</p>
+      <div class="button-row"><a class="btn btn-primary" href="/issue-005.html" hreflang="en">استكشف العدد 005 (بالإنجليزية)</a><a class="btn btn-secondary" href="/download/issue-005.pdf" hreflang="en">تحميل المجلة PDF</a><a class="btn btn-secondary" href="/ar/issue-004.html">العدد السابق 004</a></div>
     </div>
-    <aside class="issue-cover-card"><a href="/ar/issue-004.html" aria-label="فتح العدد 004"><img src="/13-assets/issue-004-cover.png" alt="DPI العدد 004 — فرصة المشتري في دبي"></a>
-      <p>المجلد 1 • العدد 004 • أكتوبر 2026</p>
+    <aside class="issue-cover-card"><a href="/issue-005.html" hreflang="en" aria-label="فتح العدد 005 باللغة الإنجليزية"><img src="/13-assets/issue-005-cover.png" width="1122" height="1402" loading="lazy" alt="غلاف DPI العدد 005 — دبي 2027: اختبار الطلب"></a>
+      <p>المجلد 1 • العدد 005 • نوفمبر 2026 · EN</p>
     </aside>
   </div>
 </section>
@@ -894,7 +915,7 @@
       <div class="dpi-footer-right">
         <nav class="dpi-footer-nav" aria-label="روابط التذييل">
           <a href="/ar/">الرئيسية</a>
-          <a href="/ar/issue-004.html">العدد 004</a>
+          <a href="/issue-005.html" hreflang="en">العدد 005 (بالإنجليزية)</a> <a href="/ar/issue-004.html">العدد 004</a>
           <a href="/ar/#publications">أرشيف الإصدارات</a>
           <a href="/ar/#monitors">مؤشرات السوق</a>
           <a href="/ar/#subscribe">اشترك</a>
