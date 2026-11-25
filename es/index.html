@@ -102,12 +102,12 @@
 
   <meta
     property="og:image"
-    content="https://dpi-os.com/13-assets/issue-004-social-preview.jpg"
+    content="https://dpi-os.com/13-assets/issue-005-social-preview.jpg"
   >
 
   <meta
     property="og:image:alt"
-    content="DPI Issue 003 — Dubai Is Cooling, But Unevenly"
+    content="DPI Issue 005 — Dubai 2027: The Demand Test (English edition)"
   >
 
 
@@ -131,7 +131,7 @@
 
   <meta
     name="twitter:image"
-    content="https://dpi-os.com/13-assets/issue-004-social-preview.jpg"
+    content="https://dpi-os.com/13-assets/issue-005-social-preview.jpg"
   >
 
   <!-- DPI STYLESHEET -->
@@ -175,6 +175,31 @@
 <!-- DPI optional analytics: GA4 + Metricool only after consent -->
 <link rel="stylesheet" href="/13-assets/dpi-analytics-consent.css?v=20261102">
 <script defer src="/13-assets/dpi-analytics-consent.js?v=20261102"></script>
+
+<style id="dpi-issue005-localized-homepage">
+/* Issue 005 — same approved cover on localized homepages, no distortion. */
+.hero-card.dpi-local-issue005-card{
+  display:flex;flex-direction:column;align-items:center;gap:14px;
+  min-width:0;text-decoration:none;color:var(--text);
+  background:radial-gradient(ellipse at 50% 15%,rgba(216,178,117,.13),transparent 60%),linear-gradient(145deg,#121b23,#0d141a);
+}
+.dpi-local-issue005-card .hero-card-top{width:100%;gap:16px;flex-wrap:wrap}
+.dpi-local-issue005-card img{
+  display:block;width:min(100%,310px);height:auto;
+  aspect-ratio:1122 / 1402;object-fit:contain;margin:3px auto;
+  border:1px solid rgba(229,188,118,.3);box-shadow:12px 17px 30px rgba(0,0,0,.37);
+}
+.dpi-local-issue005-title{font-size:1.3rem;line-height:1.35;text-align:center;margin:0;color:var(--text);font-weight:700}
+.dpi-local-issue005-action{font-size:.78rem;color:var(--gold);font-weight:700}
+.dpi-local-issue005-card:hover,.dpi-local-issue005-card:focus-visible{border-color:var(--gold)}
+.issue-cover-card img[src="/13-assets/issue-005-cover.png"]{
+  display:block;width:100%;max-width:420px;height:auto;
+  aspect-ratio:1122 / 1402;object-fit:contain;
+}
+.dpi-issue005-language-note{font-size:.85rem;color:var(--muted)}
+@media(max-width:850px){.dpi-local-issue005-card img{max-width:290px}}
+@media(max-width:500px){.dpi-local-issue005-card img{max-width:260px}}
+</style>
 </head>
 
 
@@ -313,20 +338,15 @@
       <p class="eyebrow">Inteligencia inmobiliaria independiente de Dubái</p>
       <h1>Conoce hoy.<br><span>Invierte mejor.</span><br>Construye mañana.</h1>
       <p class="hero-copy">DPI transforma datos inmobiliarios verificados en contexto, análisis y ayuda para decidir.</p>
-      <div class="button-row"><a class="btn btn-primary" href="/es/issue-004.html">Leer el número 004</a><a class="btn btn-secondary" href="#analytics">Explorar el análisis</a></div>
-      <p class="micro">Volumen 1 • Número 004 • 27 de octubre de 2026</p>
+      <div class="button-row"><a class="btn btn-primary" href="/issue-005.html" hreflang="en">Leer el número 005 (en inglés)</a><a class="btn btn-secondary" href="#analytics">Explorar el análisis</a></div>
+      <p class="micro">Volumen 1 • Número 005 • Noviembre de 2026 · Edición completa en inglés</p>
     </div>
-    <div class="hero-card">
-    <div class="hero-card-top"><span>DPI ISSUE 004</span><span>VOL. 1 • ISSUE 004</span></div>
-    <div class="divider"></div><p class="hero-card-kicker">DUBAI PROPERTY INTELLIGENCE</p>
-    <h2>La oportunidad del comprador en Dubái: ¿realidad o ilusión?</h2><p>Las ventas se desaceleran. ¿Están consiguiendo los compradores mejores oportunidades?</p>
-    <div class="signal-grid">
-      <div><span class="signal">SAVILLS Q3 2026</span><strong>~34,500</strong></div>
-      <div><span class="signal">SALES QOQ</span><strong>−4%</strong></div>
-      <div><span class="signal">VALUSTRAT SEP 2026 YOY</span><strong>−4.5%</strong></div>
-      <div><span class="signal">DPI FOCUS</span><strong>Evidence before discounts</strong></div>
-    </div>
-  </div>
+    <a class="hero-card dpi-local-issue005-card" href="/issue-005.html" hreflang="en" aria-label="Abrir el número 005 en inglés">
+      <div class="hero-card-top"><span>DPI ISSUE 005</span><span>ENGLISH EDITION</span></div>
+      <img src="/13-assets/issue-005-cover.png" width="1122" height="1402" loading="eager" alt="Portada de DPI número 005 — Dubai 2027: The Demand Test">
+      <h2 class="dpi-local-issue005-title">Dubái 2027: la prueba de la demanda</h2>
+      <span class="dpi-local-issue005-action">Explorar el número 005 en inglés</span>
+    </a>
   </div>
 </section>
 
@@ -770,15 +790,16 @@
 <section class="section section-alt" id="latest">
   <div class="container latest-grid">
     <div>
-      <p class="eyebrow">Últimos análisis</p>
-      <h2 class="section-title">La oportunidad del comprador en Dubái: ¿realidad o ilusión?</h2>
-      <p class="issue-meta">Volumen 1 • Número 004 • Octubre 2026</p>
-      <div class="date-box"><div><span>Número</span><strong>004</strong></div><div><span>Publicado</span><strong>27 de octubre de 2026</strong></div></div>
-      <p>Un mercado más lento no convierte cada propiedad en una ganga. El número 004 analiza ventas, precios por zona y rentabilidad real tras los gastos.</p>
-      <div class="button-row"><a class="btn btn-primary" href="/es/issue-004.html">Abrir el número 004</a><a class="btn btn-secondary" href="/es/issue-003.html">Leer el número 003</a><a class="btn btn-secondary" href="/download/issue-004.pdf">Descargar la revista</a></div>
+      <p class="eyebrow">Últimos análisis · Número 005</p>
+      <h2 class="section-title">Dubái 2027: la prueba de la demanda</h2>
+      <p class="issue-meta">Volumen 1 • Número 005 • Noviembre de 2026</p>
+      <div class="date-box"><div><span>Número</span><strong>005</strong></div><div><span>Edición</span><strong>Noviembre de 2026</strong></div></div>
+      <p>362 registros de proyectos activos tienen como fecha prevista de finalización 2027; eso no equivale a entregas confirmadas ni a un número de viviendas. El número 005 compara contratos de alquiler, rentas y señales de tres zonas de Dubái para analizar la demanda real.</p>
+      <p class="dpi-issue005-language-note">La edición completa está disponible actualmente en inglés.</p>
+      <div class="button-row"><a class="btn btn-primary" href="/issue-005.html" hreflang="en">Explorar el número 005 (en inglés)</a><a class="btn btn-secondary" href="/download/issue-005.pdf" hreflang="en">Descargar PDF</a><a class="btn btn-secondary" href="/es/issue-004.html">Número anterior 004</a></div>
     </div>
-    <aside class="issue-cover-card"><a href="/es/issue-004.html" aria-label="Abrir el número 004"><img src="/13-assets/issue-004-cover.png" alt="DPI Número 004 — Oportunidad o ilusión"></a>
-      <p>Volumen 1 • Número 004 • Octubre 2026</p>
+    <aside class="issue-cover-card"><a href="/issue-005.html" hreflang="en" aria-label="Abrir el número 005 en inglés"><img src="/13-assets/issue-005-cover.png" width="1122" height="1402" loading="lazy" alt="Portada de DPI número 005 — Dubai 2027: The Demand Test"></a>
+      <p>Volumen 1 • Número 005 • Noviembre de 2026 · EN</p>
     </aside>
   </div>
 </section>
@@ -950,7 +971,7 @@
       <div class="dpi-footer-right">
         <nav class="dpi-footer-nav" aria-label="Navegación del pie de página">
           <a href="/es/">Inicio</a>
-          <a href="/es/issue-004.html">Número 004</a>
+          <a href="/issue-005.html" hreflang="en">Número 005 (inglés)</a> <a href="/es/issue-004.html">Número 004</a>
           <a href="/es/#publications">Archivo de publicaciones</a>
           <a href="/es/#monitors">Monitores de mercado</a>
           <a href="/es/#subscribe">Suscribirse</a>
