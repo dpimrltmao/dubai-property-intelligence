@@ -10,10 +10,10 @@ This **draft** branch stages the November 2026 issue on DPI's GitHub Pages site.
 - `13-assets/issue-005-cover.png`: the approved cover, unchanged.
 - `13-assets/issue-005-social-preview.jpg`: 1200×630 sharing image.
 
-## One binary release asset still required
-Upload **`download/issue-005.pdf`** from the local release package before merging this pull request. Do not substitute an earlier review proof. Source file: `DPI_Issue_005_Dubai_2027_The_Demand_Test_PUBLIC_RELEASE.pdf`. It is the approved 10-page publication with the internal proof footer removed.
+## PDF release asset — verified
+The approved `download/issue-005.pdf` has already been uploaded to the `main` branch by the publisher. Its Git blob SHA (`26f084e7dca85439ce1c4956aff53c0a7f49d906`) exactly matches the 10-page PDF in the approved website release package. Merging this PR preserves that existing PDF on `main`; no duplicate binary upload is necessary.
 
-Until the PDF is present, the “Read magazine” and “Download PDF” buttons in this branch point to a missing file; **do not merge**.
+The public PDF URL was independently verified as accessible in a browser. Publication webpage and homepage visibility are finalized in this PR.
 
 ## Pre-launch QA
 1. Check desktop and mobile at `/issue-005.html` and `/#latest` with no horizontal overflow or clipped text.
@@ -33,4 +33,4 @@ Until the PDF is present, the “Read magazine” and “Download PDF” buttons
 - Artwork shown for communities is illustrative, not photographic evidence.
 - The report is independent educational research, not personalized advice.
 
-**Status: Draft. Live `main` remains untouched.**
+**Status: Ready for release; PDF already present on `main`; retain Issue 004 archive and existing consent controls.**
